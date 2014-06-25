@@ -68,8 +68,6 @@ body { font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-s
 .teaser a:hover { text-decoration: none; }
 .teaser .teaser__reload { position: absolute; top: 50%; right: 20px; height: 30px; width: 30px; text-align: center; line-height: 30px; margin-top: -15px; text-decoration: none; -webkit-transition: -webkit-transform 0.2s ease-in; -moz-transition: -moz-transform 0.2s ease-in; -o-transition: -o-transform 0.2s ease-in; transition: transform 0.2s ease-in; font-family: "WebSymbolsLigaRegular"; font-weight: normal; font-style: normal; text-transform: none !important; }
 .teaser .teaser__reload:before { content: "\0057"; }
-.teaser .teaser__reload:hover { -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
-.teaser .teaser__reload:active { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
 
 .page { -webkit-box-shadow: 0 0 21px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 0 21px rgba(0, 0, 0, 0.15); box-shadow: 0 0 21px rgba(0, 0, 0, 0.15); }
 
