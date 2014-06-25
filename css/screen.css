@@ -43,6 +43,8 @@ body { font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-s
 .icon { display: inline-block; vertical-align: middle; }
 .icon.icon_signout { background: url("../img/svg/signout.svg") no-repeat 0 0; -moz-background-size: 18px 24px 100%; -webkit-background-size: 18px 24px 100%; background-size: 18px 24px 100%; width: 18px; height: 24px; display: inline-block; }
 .icon.icon_signin { background: url("../img/svg/signin.svg") no-repeat 0 0; -moz-background-size: 27px 27px 100%; -webkit-background-size: 27px 27px 100%; background-size: 27px 27px 100%; width: 27px; height: 27px; display: inline-block; }
+.icon.icon_list { background: url("../img/svg/sort_list.svg") no-repeat 0 0; -moz-background-size: 28px 28px 100%; -webkit-background-size: 28px 28px 100%; background-size: 28px 28px 100%; width: 28px; height: 28px; display: inline-block; }
+.icon.icon_pin { background: url("../img/svg/sort_pin.svg") no-repeat 0 0; -moz-background-size: 24px 40px 100%; -webkit-background-size: 24px 40px 100%; background-size: 24px 40px 100%; width: 24px; height: 40px; display: inline-block; }
 
 .out { min-width: 1000px; max-width: 1200px; margin: 0 auto; }
 
@@ -54,7 +56,7 @@ body { font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-s
 .header .header__count { float: left; margin-left: 20px; margin-top: 15px; font-size: 18px; color: #393939; line-height: 1; }
 .header .header__count strong { display: inline-block; vertical-align: middle; font-size: 30px; color: #ffbf00; font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; }
 .header .header__menu { position: relative; display: inline-block; vertical-align: top; margin-top: 22px; padding-right: 30px; }
-.header .header__menu:before { position: absolute; top: 50%; margin-top: -21px; right: 0; content: ""; background: url('../img/icons-sbb82e91de8.png') 0 -28px no-repeat; width: 1px; height: 41px; }
+.header .header__menu:before { position: absolute; top: 50%; margin-top: -21px; right: 0; content: ""; background: url('../img/icons-sbc57d64bb4.png') 0 0 no-repeat; width: 1px; height: 41px; }
 .header .header__menu li { display: inline-block; vertical-align: middle; text-transform: uppercase; margin-left: 30px; font-size: 14px; font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; }
 .header .header__menu a { text-decoration: none; color: #7a7a7a; }
 .header .header__user { display: inline-block; vertical-align: top; margin-top: 20px; font-size: 0; }
@@ -85,6 +87,33 @@ body { font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-s
 .article figure { margin-top: 30px; margin-bottom: 30px; }
 .article figure img { display: block; }
 
-.sidenav { margin: 20px 15px; }
-.sidenav li.is-active a { background: white; }
-.sidenav a { font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; display: inline-block; padding: 0 19px; height: 41px; line-height: 41px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; font-size: 15px; color: #7a7a7a; text-transform: uppercase; text-decoration: none; }
+.sidebar .sidebar__filter { border: 1px solid #e0e0e0; border-width: 0 0 1px 0; padding: 20px 10px 20px 20px; }
+.sidebar .sidebar__filter li { margin-top: 14px; }
+.sidebar .sidebar__filter li:first-child { margin-top: 0; }
+.sidebar .sidebar__nav { padding: 20px 15px; }
+.sidebar .sidebar__nav li.is-active a { background: white; color: #5f5f5f; }
+.sidebar .sidebar__nav a { font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; display: inline-block; padding: 15px 18px 11px; line-height: 15px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; font-size: 15px; color: #7a7a7a; text-transform: uppercase; text-decoration: none; }
+.sidebar .sidebar__nav a:hover { color: #5f5f5f; }
+.sidebar .sidebar__switch { padding: 20px; font-size: 0; border: 1px solid #e0e0e0; border-width: 0 0 1px 0; }
+.sidebar .sidebar__switch li { display: inline-block; margin-left: 10px; text-align: center; }
+.sidebar .sidebar__switch li:first-child { margin-left: 0; }
+.sidebar .sidebar__switch li.is-active a { background: white; }
+.sidebar .sidebar__switch a { position: relative; display: block; width: 80px; height: 80px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; text-decoration: none; color: #7a7a7a; padding-top: 60px; }
+.sidebar .sidebar__switch a .icon { position: absolute; top: 10px; left: 50%; }
+.sidebar .sidebar__switch a .icon_list { top: 15px; margin-left: -14px; }
+.sidebar .sidebar__switch a .icon_pin { top: 8px; margin-left: -12px; }
+.sidebar .sidebar__switch span { display: block; font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 12px; line-height: 1; text-transform: uppercase; }
+.sidebar .sidebar__sort { border: 1px solid #e0e0e0; border-width: 0 0 1px 0; }
+
+.checkbox { position: relative; padding-left: 28px; display: inline-block; vertical-align: middle; cursor: pointer; font-size: 0; min-height: 20px; text-align: left; }
+.checkbox .fa-check { position: absolute; left: 0; top: 0; width: 20px; height: 20px; font-size: 16px; background: white; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; border: 1px solid #b7b7b7; font-style: normal; cursor: pointer; color: #4a4a4a; }
+.checkbox .fa-check:before { display: none; margin: 1px 0 0 1px; color: #7a7a7a; }
+.checkbox span { display: inline-block; vertical-align: middle; font-size: 15px; line-height: 20px; color: #7a7a7a; letter-spacing: 0.025em; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.checkbox span .fa { margin-right: 7px; }
+.checkbox input { position: absolute; left: 0; top: 0; z-index: 2; width: 20px; height: 20px; opacity: 0; cursor: pointer; }
+.checkbox input:checked + .fa-check:before { display: inline-block; }
+
+.select { position: relative; }
+.select input { display: block; font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-style: normal; width: 100%; background: none; font-size: 15px; color: #7a7a7a; padding: 20px 26px; }
+.select .fa { position: absolute; top: 20px; right: 26px; font-size: 18px; color: #979797; }
+.select select { position: absolute; z-index: 2; cursor: pointer; -webkit-appearance: none; top: 0; left: 0; width: 100%; height: 100%; margin: 0; opacity: 0; }
