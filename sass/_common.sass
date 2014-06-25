@@ -157,15 +157,20 @@ body
 		position: absolute
 		top: 50%
 		right: 20px
-		height: 25px
+		height: 30px
+		width: 30px
 		text-align: center
-		line-height: 1
-		margin-top: -12px
+		line-height: 30px
+		margin-top: -15px
 		text-decoration: none
 		+transition(transform .2s ease-in)
 		+ws
 		&:before
 			content: "\0057"
+		&:hover
+			+rotate(360)
+		&:active
+			text-shadow: 0 -1px 0 rgba(#000, .3)
 
 .page
 	+box-shadow(0 0 21px rgba(0,0,0,.15))
