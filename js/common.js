@@ -1,8 +1,8 @@
 $(window).load(function() {
 
 	$(function(){
-		var bg_image = (Math.floor(Math.random() * 11))+ ".png";
-		$('body').css({'background-image': 'url(img/covers/bg' + bg_image + ')'});
+		var bg_image = (Math.floor(Math.random() * 11))+ ".jpg";
+		$('.bg_cover').css({'background-image': 'url(img/covers/bg' + bg_image + ')'});
 	});
 
 });
