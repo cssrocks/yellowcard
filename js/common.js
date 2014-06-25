@@ -1,9 +1,14 @@
-head.ready(function() {
+$(window).load(function() {
 
 	$(function(){
 		var bg_image = (Math.floor(Math.random() * 11))+ ".png";
 		$('body').css({'background-image': 'url(img/covers/bg' + bg_image + ')'});
 	});
+
+});
+
+head.ready(function() {
+
 
 	$(function() {
 		var sidebar_height = $('.l-sidebar').height();
