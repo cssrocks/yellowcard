@@ -42,6 +42,7 @@ body { font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-s
 
 .icon { display: inline-block; vertical-align: middle; }
 .icon.icon_signout { background: url("../img/svg/signout.svg") no-repeat 0 0; -moz-background-size: 18px 24px 100%; -webkit-background-size: 18px 24px 100%; background-size: 18px 24px 100%; width: 18px; height: 24px; display: inline-block; }
+.icon.icon_signin { background: url("../img/svg/signin.svg") no-repeat 0 0; -moz-background-size: 27px 27px 100%; -webkit-background-size: 27px 27px 100%; background-size: 27px 27px 100%; width: 27px; height: 27px; display: inline-block; }
 
 .out { min-width: 1000px; max-width: 1200px; margin: 0 auto; }
 
@@ -58,7 +59,9 @@ body { font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-s
 .header .header__menu a { text-decoration: none; color: #7a7a7a; }
 .header .header__user { display: inline-block; vertical-align: top; margin-top: 20px; font-size: 0; }
 .header .header__user li { display: inline-block; margin-left: 30px; font-size: 16px; font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; }
-.header .header__user a { text-decoration: none; color: #7a7a7a; }
+.header .header__user a { display: block; text-decoration: none; color: #7a7a7a; }
+.header .header__user a .icon_signout { position: relative; top: -2px; }
+.header .header__user a .icon_signin { position: relative; top: -2px; margin-right: 7px; }
 .header .header__user strong { font-size: 18px; font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; }
 
 .teaser { position: relative; font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; height: 68px; line-height: 68px; background: #9fa3fb; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #7d81cf), color-stop(100%, #9fa3fb)); background-image: -webkit-linear-gradient(bottom, #7d81cf 0%, #9fa3fb 100%); background-image: -moz-linear-gradient(bottom, #7d81cf 0%, #9fa3fb 100%); background-image: -o-linear-gradient(bottom, #7d81cf 0%, #9fa3fb 100%); background-image: linear-gradient(bottom, #7d81cf 0%, #9fa3fb 100%); color: white; text-align: center; padding: 0 65px; font-size: 25px; }
