@@ -1,5 +1,13 @@
 head.ready(function() {
 
-	console.log("These aren't the droids you're looking for!");
+	$(function(){
+		var bg_image = (Math.floor(Math.random() * 11))+ ".png";
+		$('body').css({'background-image': 'url(img/covers/bg' + bg_image + ')'});
+	});
+
+	$(function() {
+		var sidebar_height = $('.l-sidebar').height();
+		$('.l-main').css('min-height', sidebar_height);
+	});
 
 });

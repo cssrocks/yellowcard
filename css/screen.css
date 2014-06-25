@@ -21,4 +21,69 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-family: Arial, sans-serif; font-size: 14px; line-height: 1.4; }
+.l-layout { *zoom: 1; }
+.l-layout:after { content: " "; display: table; clear: both; }
+
+.l-sidebar { float: left; width: 210px; margin-right: -210px; min-height: 910px; }
+
+.l-main { position: relative; margin-left: 210px; overflow: hidden; background: white; }
+
+@font-face { font-family: "BrutalType"; src: url("../fonts/BrutalType-Regular.eot"); src: url("../fonts/BrutalType-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BrutalType-Regular.woff") format("woff"), url("../fonts/BrutalType-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "BrutalType Medium"; src: url("../fonts/BrutalType-Medium.eot"); src: url("../fonts/BrutalType-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/BrutalType-Medium.woff") format("woff"), url("../fonts/BrutalType-Medium.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "BrutalType Light"; src: url("../fonts/BrutalType-Light.eot"); src: url("../fonts/BrutalType-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/BrutalType-Light.woff") format("woff"), url("../fonts/BrutalType-Light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "BrutalType Bold"; src: url("../fonts/BrutalType-Bold.eot"); src: url("../fonts/BrutalType-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BrutalType-Bold.woff") format("woff"), url("../fonts/BrutalType-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "WebSymbolsLigaRegular"; src: url("../fonts/websymbolsligaregular.eot"); src: url("../fonts/websymbolsligaregular.eot?#iefix") format("embedded-opentype"), url("../fonts/websymbolsligaregular.woff") format("woff"), url("../fonts/websymbolsligaregular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+body { font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 1.4; background-color: #f2f2eb; color: #4a4a4a; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; min-width: 1000px; }
+
+.icon { display: inline-block; vertical-align: middle; }
+.icon.icon_signout { background: url("../img/svg/signout.svg") no-repeat 0 0; -moz-background-size: 18px 24px 100%; -webkit-background-size: 18px 24px 100%; background-size: 18px 24px 100%; width: 18px; height: 24px; display: inline-block; }
+
+.out { min-width: 1000px; max-width: 1200px; margin: 0 auto; }
+
+.header { padding-top: 30px; position: relative; text-align: right; }
+.header .header__in { height: 61px; background: white; background: rgba(255, 255, 255, 0.88); *zoom: 1; padding: 0 20px 0 0; -webkit-box-shadow: 0 0 10px rgba(51, 48, 48, 0.12); -moz-box-shadow: 0 0 10px rgba(51, 48, 48, 0.12); box-shadow: 0 0 10px rgba(51, 48, 48, 0.12); }
+.header .header__in:after { content: " "; display: table; clear: both; }
+.header .header__logo { float: left; position: relative; margin-top: -10px; height: 71px; overflow: hidden; }
+.header .header__logo a { background: url("../img/svg/logo.svg") no-repeat 0 0; -moz-background-size: 210px 132px 100%; -webkit-background-size: 210px 132px 100%; background-size: 210px 132px 100%; width: 210px; height: 132px; display: inline-block; display: block; font: 0/0 a; text-shadow: none; color: transparent; }
+.header .header__count { float: left; margin-left: 20px; margin-top: 15px; font-size: 18px; color: #393939; line-height: 1; }
+.header .header__count strong { display: inline-block; vertical-align: middle; font-size: 30px; color: #ffbf00; font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; }
+.header .header__menu { position: relative; display: inline-block; vertical-align: top; margin-top: 22px; padding-right: 30px; }
+.header .header__menu:before { position: absolute; top: 50%; margin-top: -21px; right: 0; content: ""; background: url('../img/icons-sbb82e91de8.png') 0 -28px no-repeat; width: 1px; height: 41px; }
+.header .header__menu li { display: inline-block; vertical-align: middle; text-transform: uppercase; margin-left: 30px; font-size: 14px; font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; }
+.header .header__menu a { text-decoration: none; color: #7a7a7a; }
+.header .header__user { display: inline-block; vertical-align: top; margin-top: 20px; font-size: 0; }
+.header .header__user li { display: inline-block; margin-left: 30px; font-size: 16px; font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; }
+.header .header__user a { text-decoration: none; color: #7a7a7a; }
+.header .header__user strong { font-size: 18px; font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; }
+
+.teaser { position: relative; font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; height: 68px; line-height: 68px; background: #9fa3fb; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #7d81cf), color-stop(100%, #9fa3fb)); background-image: -webkit-linear-gradient(bottom, #7d81cf 0%, #9fa3fb 100%); background-image: -moz-linear-gradient(bottom, #7d81cf 0%, #9fa3fb 100%); background-image: -o-linear-gradient(bottom, #7d81cf 0%, #9fa3fb 100%); background-image: linear-gradient(bottom, #7d81cf 0%, #9fa3fb 100%); color: white; text-align: center; padding: 0 65px; font-size: 25px; }
+.teaser:before { position: absolute; top: -7px; left: 254px; width: 0px; height: 0px; border-style: solid; border-width: 0 13.5px 7px 13.5px; border-color: transparent transparent #9fa3fb transparent; -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); content: ""; }
+.teaser p { display: block; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
+.teaser a { font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; color: inherit; text-decoration: underline; }
+.teaser a:hover { text-decoration: none; }
+.teaser .teaser__reload { position: absolute; top: 0; right: 20px; text-decoration: none; -webkit-transition: -webkit-transform 0.2s ease-in; -moz-transition: -moz-transform 0.2s ease-in; -o-transition: -o-transform 0.2s ease-in; transition: transform 0.2s ease-in; font-family: "WebSymbolsLigaRegular"; font-weight: normal; font-style: normal; text-transform: none !important; }
+.teaser .teaser__reload:before { content: "\0057"; }
+.teaser .teaser__reload:hover { -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+.teaser .teaser__reload:active { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
+
+.page { -webkit-box-shadow: 0 0 21px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 0 21px rgba(0, 0, 0, 0.15); box-shadow: 0 0 21px rgba(0, 0, 0, 0.15); }
+
+.content { position: relative; background: #f7f7f7; }
+
+.footer { height: 195px; background: white; background: rgba(255, 255, 255, 0.88); }
+
+.article { margin-left: 60px; padding: 55px 70px 0 60px; }
+.article h1 { font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 50px; line-height: 1; margin-left: -60px; margin-bottom: 50px; }
+.article h2 { font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 25px; line-height: 1; margin-left: -60px; margin-bottom: 30px; }
+.article p { line-height: 30px; font-size: 18px; margin-right: 30px; margin-top: 30px; margin-bottom: 30px; }
+.article figure { margin-top: 30px; margin-bottom: 30px; }
+.article figure img { display: block; }
+
+.sidenav { margin: 20px 15px; }
+.sidenav li.is-active a { background: white; }
+.sidenav a { font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; display: inline-block; padding: 0 19px; height: 41px; line-height: 41px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; font-size: 15px; color: #7a7a7a; text-transform: uppercase; text-decoration: none; }

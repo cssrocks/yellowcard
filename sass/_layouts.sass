@@ -1,27 +1,42 @@
-// default grid layout
-$gridWidth: 1170px
-$gridColumns: 12
-
-%in
-	width: ($gridWidth)
-	margin-left: auto
-	margin-right: auto
-
-.container
-	@extend %in
-
-.row
+// default layout
+.l-layout
 	+clr
-	margin-left: -15px
-	margin-right: -15px
-
-%grid
+.l-sidebar
 	float: left
-	min-height: 1px
-	padding-left: 15px
-	padding-right: 15px
+	width: 210px
+	margin-right: -210px
+	min-height: 910px
+.l-main
+	position: relative
+	// float: left
+	margin-left: 210px
+	overflow: hidden
+	background: #fff
 
-@for $i from 1 through $gridColumns
-	.col-#{$i}
-		@extend %grid
-		width: ($i / $gridColumns) * 100%
+// default grid layout
+// $gridWidth: 1170px
+// $gridColumns: 12
+
+// %in
+// 	width: ($gridWidth)
+// 	margin-left: auto
+// 	margin-right: auto
+
+// .container
+// 	@extend %in
+
+// .row
+// 	+clr
+// 	margin-left: -15px
+// 	margin-right: -15px
+
+// %grid
+// 	float: left
+// 	min-height: 1px
+// 	padding-left: 15px
+// 	padding-right: 15px
+
+// @for $i from 1 through $gridColumns
+// 	.col-#{$i}
+// 		@extend %grid
+// 		width: ($i / $gridColumns) * 100%

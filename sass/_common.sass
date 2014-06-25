@@ -1,4 +1,236 @@
+$gray: #7a7a7a
+
++font('BrutalType', 'BrutalType-Regular')
++font('BrutalType Medium', 'BrutalType-Medium')
++font('BrutalType Light', 'BrutalType-Light')
++font('BrutalType Bold', 'BrutalType-Bold')
++font('WebSymbolsLigaRegular', 'websymbolsligaregular')
+
+=bt
+	font-family: "BrutalType", Arial, sans-serif
+	font-weight: normal
+	font-style: normal
+=btm
+	font-family: "BrutalType Medium", Arial, sans-serif
+	font-weight: normal
+	font-style: normal
+=btl
+	font-family: "BrutalType Light", Arial, sans-serif
+	font-weight: normal
+	font-style: normal
+=btb
+	font-family: "BrutalType Bold", Arial, sans-serif
+	font-weight: normal
+	font-style: normal
+=ws
+	font-family: "WebSymbolsLigaRegular"
+	font-weight: normal
+	font-style: normal
+	text-transform: none !important
+
 body
-	font-family: Arial, sans-serif
+	+bt
 	font-size: 14px
 	line-height: 1.4
+	background-color: #f2f2eb
+	color: #4a4a4a
+	// background-attachment: fixed
+	+font-smoothing
+	min-width: 1000px
+
+.icon
+	display: inline-block
+	vertical-align: middle
+	&.icon_signout
+		+svg(signout, 18, 24)
+
+%in
+	min-width: 1000px
+	max-width: 1200px
+	margin: 0 auto
+
+.out
+	@extend %in
+
+.header
+	padding-top: 30px
+	position: relative
+	text-align: right
+	.header__in
+		height: 61px
+		background: #fff
+		background: rgba(#fff, .88)
+		+clr
+		padding: 0 20px 0 0
+		+box-shadow(0 0 10px rgba(51,48,48,.12))
+	.header__logo
+		float: left
+		position: relative
+		margin-top: -10px
+		height: 71px
+		overflow: hidden
+		a
+			+svg(logo, 210, 132)
+			display: block
+			+hidetext
+	.header__count
+		float: left
+		margin-left: 20px
+		margin-top: 15px
+		font-size: 18px
+		color: #393939
+		line-height: 1
+		strong
+			display: inline-block
+			vertical-align: middle
+			font-size: 30px
+			color: #ffbf00
+			+btb
+	.header__menu
+		position: relative
+		display: inline-block
+		vertical-align: top
+		margin-top: 22px
+		padding-right: 30px
+		&:before
+			position: absolute
+			top: 50%
+			margin-top: -21px
+			right: 0
+			content: ""
+			+s(menu_separator)
+		li
+			display: inline-block
+			vertical-align: middle
+			text-transform: uppercase
+			margin-left: 30px
+			font-size: 14px
+			+btm
+		a
+			text-decoration: none
+			color: $gray
+	.header__user
+		display: inline-block
+		vertical-align: top
+		margin-top: 20px
+		font-size: 0
+		li
+			display: inline-block
+			margin-left: 30px
+			font-size: 16px
+			+btm
+		a
+			text-decoration: none
+			color: $gray
+		strong
+			font-size: 18px
+			+btm
+
+.teaser
+	position: relative
+	+btl
+	height: 68px
+	line-height: 68px
+	background: #9fa3fb
+	+background-image(linear-gradient(bottom, #7d81cf 0%, #9fa3fb 100%))
+	color: #fff
+	text-align: center
+	padding: 0 65px
+	font-size: 25px
+	&:before
+		position: absolute
+		top: -7px
+		left: 254px
+		+arr(27, 7, #9fa3fb, t)
+		+rotate(360)
+		content: ""
+	p
+		display: block
+		+text-overflow
+	a
+		+btm
+		color: inherit
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	.teaser__reload
+		position: absolute
+		top: 0
+		right: 20px
+		text-decoration: none
+		+transition(transform .2s ease-in)
+		+ws
+		&:before
+			content: "\0057"
+		&:hover
+			+rotate(360)
+		&:active
+			text-shadow: 0 -1px 0 rgba(#000, .3)
+
+.page
+	+box-shadow(0 0 21px rgba(0,0,0,.15))
+
+.content
+	position: relative
+	background: #f7f7f7
+
+.footer
+	height: 195px
+	background: #fff
+	background: rgba(#fff, .88)
+
+.article
+	margin-left: 60px
+	padding: 55px 70px 0 60px
+	h1
+		+btl
+		font-size: 50px
+		line-height: 1
+		margin-left: -60px
+		margin-bottom: 50px
+	h2
+		+btm
+		font-size: 25px
+		line-height: 1
+		margin-left: -60px
+		margin-bottom: 30px
+	p
+		line-height: 30px
+		font-size: 18px
+		margin-right: 30px
+		margin-top: 30px
+		margin-bottom: 30px
+	figure
+		margin-top: 30px
+		margin-bottom: 30px
+		img
+			display: block
+
+.sidenav
+	margin: 20px 15px
+	li
+		&.is-active
+			a
+				background: #fff
+	a
+		+btb
+		display: inline-block
+		padding: 0 19px
+		height: 41px
+		line-height: 41px
+		+border-radius(20px)
+		font-size: 15px
+		color: $gray
+		text-transform: uppercase
+		text-decoration: none
+
+
+
+
+
+
+
+
+
+
+
