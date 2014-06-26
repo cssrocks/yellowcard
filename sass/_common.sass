@@ -334,11 +334,12 @@ a
 		a
 			color: #4a4a4a
 			text-decoration: none
-			border-bottom: 1px solid #949494
+			+transition(color 0.25s ease-out, background 0.25s ease-out, border-color 0.25s ease-out, box-shadow 0.25s ease-out)
+			border-bottom: 1px solid rgba(#949494, .3)
 			&:hover
 				color: #087380
 				text-decoration: none
-				border-color: #087380
+				border-color: rgba(#087380, .3)
 	.footer__studio
 		display: inline-block
 		width: 127px
@@ -360,6 +361,7 @@ a
 		font-size: 25px
 		line-height: 1
 		margin-left: -60px
+		margin-top: 30px
 		margin-bottom: 30px
 	p
 		line-height: 30px
