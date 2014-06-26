@@ -123,10 +123,10 @@ a { color: #4a4a4a; text-decoration: none; }
 .footer .footer__studio { display: inline-block; width: 127px; text-align: left; }
 .footer .footer__studio strong { font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; }
 
-.article { margin-left: 60px; padding: 55px 70px 0 60px; }
+.article { margin-left: 60px; padding: 55px 70px 55px 60px; }
 .article h1 { font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 50px; line-height: 1; margin-left: -60px; margin-bottom: 50px; }
 .article h2 { font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 25px; line-height: 1; margin-left: -60px; margin-bottom: 30px; }
-.article p { line-height: 30px; font-size: 18px; margin-right: 30px; margin-top: 30px; margin-bottom: 30px; }
+.article p { line-height: 30px; font-size: 18px; margin-right: 30px; margin-top: 30px; }
 .article figure { margin-top: 30px; margin-bottom: 30px; }
 .article figure img { display: block; }
 
