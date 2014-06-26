@@ -59,66 +59,70 @@
 					<aside class="l-sidebar">
 						<!-- BEGIN sidebar -->
 						<div class="sidebar">
-							<ul class="sidebar__switch">
-								<li class="is-active">
-									<a href="#">
-										<i class="icon icon_list"></i>
-										<span>Списком</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="icon icon_pin"></i>
-										<span>На карте</span>
-									</a>
-								</li>
-							</ul>
-							<ul class="sidebar__filter">
-								<li>
-									<label class="checkbox">
-										<input type="checkbox">
-										<i class="fa fa-check"></i>
-										<span>Горящие акции</span>
-									</label>
-								</li>
-								<li>
-									<label class="checkbox">
-										<input type="checkbox" checked>
-										<i class="fa fa-check"></i>
-										<span>Постоянные</span>
-									</label>
-								</li>
-								<li>
-									<label class="checkbox">
-										<input type="checkbox">
-										<i class="fa fa-check"></i>
-										<span>На которые хватает баллов</span>
-									</label>
-								</li>
-							</ul>
-							<div class="sidebar__sort">
-								<div class="select js-select">
-									<input type="text" class="js-select-input" readonly value="Все партнеры">
-									<i class="fa fa-caret-down"></i>
-									<select>
-										<option value="Все партнеры">Все партнеры</option>
-										<option value="Все партнеры 1">Все партнеры 1</option>
-										<option value="Все партнеры">Все партнеры</option>
-									</select>
+							<!-- BEGIN filters -->
+							<div class="filters">
+								<ul class="filter filter_switch">
+									<li class="is-active">
+										<a href="#">
+											<i class="icon icon_list"></i>
+											<span>Списком</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon icon_pin"></i>
+											<span>На карте</span>
+										</a>
+									</li>
+								</ul>
+								<ul class="filter filter_sort">
+									<li>
+										<label class="checkbox">
+											<input type="checkbox">
+											<i class="fa fa-check"></i>
+											<span>Горящие акции</span>
+										</label>
+									</li>
+									<li>
+										<label class="checkbox">
+											<input type="checkbox" checked>
+											<i class="fa fa-check"></i>
+											<span>Постоянные</span>
+										</label>
+									</li>
+									<li>
+										<label class="checkbox">
+											<input type="checkbox">
+											<i class="fa fa-check"></i>
+											<span>На которые хватает баллов</span>
+										</label>
+									</li>
+								</ul>
+								<div class="filter filter_select">
+									<div class="select js-select">
+										<input type="text" class="js-select-input" readonly value="Все партнеры">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="Все партнеры">Все партнеры</option>
+											<option value="Длинный список партнеров">Длинный список партнеров</option>
+											<option value="Все участники">Все участники</option>
+										</select>
+									</div>
 								</div>
+								<ul class="filter filter_categories">
+									<li class="is-active"><a href="#">Все акции</a></li>
+									<li><a href="#">Товары</a></li>
+									<li><a href="#">Услуги</a></li>
+									<li><a href="#">Еда</a></li>
+									<li><a href="#">Авто</a></li>
+									<li><a href="#">Красота</a></li>
+									<li><a href="#">здоровье</a></li>
+									<li><a href="#">Развлечения</a></li>
+									<li><a href="#">Обучение</a></li>
+									<li><a href="#">Туризм</a></li>
+								</ul>
 							</div>
-							<ul class="sidebar__nav">
-								<li class="is-active"><a href="#">Все акции</a></li>
-								<li><a href="#">Товары</a></li>
-								<li><a href="#">Услуги</a></li>
-								<li><a href="#">Еда</a></li>
-								<li><a href="#">Авто</a></li>
-								<li><a href="#">Красота</a></li>
-								<li><a href="#">здоровье</a></li>
-								<li><a href="#">Развлечения</a></li>
-								<li><a href="#">Обучение</a></li>
-								<li><a href="#">Туризм</a></li>
-							</ul>
+							<!-- END filters -->
 						</div>
 						<!-- END sidebar -->
 					</aside>

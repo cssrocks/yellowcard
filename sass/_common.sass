@@ -226,39 +226,16 @@ body
 			display: block
 
 .sidebar
-	.sidebar__filter
-		border: 1px solid #e0e0e0
-		border-width: 0 0 1px 0
-		padding: 20px 10px 20px 20px
-		li
-			margin-top: 14px
-			&:first-child
-				margin-top: 0
-	.sidebar__nav
-		padding: 20px 15px
-		li
-			&.is-active
-				a
-					background: #fff
-					color: #5f5f5f
-		a
-			+btb
-			display: inline-block
-			padding: 15px 18px 11px
-			// height: 41px
-			line-height: 15px
-			+border-radius(20px)
-			font-size: 15px
-			color: $gray
-			text-transform: uppercase
-			text-decoration: none
-			&:hover
-				color: #5f5f5f
-	.sidebar__switch
-		padding: 20px
+
+
+.filter
+	border: 1px solid #e0e0e0
+	border-width: 1px 0 0 0
+	padding: 20px
+	&:first-child
+		border: none
+	&.filter_switch
 		font-size: 0
-		border: 1px solid #e0e0e0
-		border-width: 0 0 1px 0
 		li
 			display: inline-block
 			margin-left: 10px
@@ -295,9 +272,34 @@ body
 			font-size: 12px
 			line-height: 1
 			text-transform: uppercase
-	.sidebar__sort
-		border: 1px solid #e0e0e0
-		border-width: 0 0 1px 0
+	&.filter_sort
+		padding: 20px 10px 20px 20px
+		li
+			margin-top: 14px
+			&:first-child
+				margin-top: 0
+	&.filter_select
+		padding: 0
+	&.filter_categories
+		padding: 20px 15px
+		li
+			&.is-active
+				a
+					background: #fff
+					color: #5f5f5f
+		a
+			+btb
+			display: inline-block
+			padding: 15px 18px 11px
+			// height: 41px
+			line-height: 15px
+			+border-radius(20px)
+			font-size: 15px
+			color: $gray
+			text-transform: uppercase
+			text-decoration: none
+			&:hover
+				color: #5f5f5f
 
 .checkbox
 	position: relative
@@ -358,7 +360,8 @@ body
 		background: none
 		font-size: 15px
 		color: $gray
-		padding: 20px 26px
+		padding: 20px 45px 20px 26px
+		+text-overflow
 	.fa
 		position: absolute
 		top: 20px

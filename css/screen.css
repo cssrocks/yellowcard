@@ -87,23 +87,25 @@ body { font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-s
 .article figure { margin-top: 30px; margin-bottom: 30px; }
 .article figure img { display: block; }
 
-.sidebar .sidebar__filter { border: 1px solid #e0e0e0; border-width: 0 0 1px 0; padding: 20px 10px 20px 20px; }
-.sidebar .sidebar__filter li { margin-top: 14px; }
-.sidebar .sidebar__filter li:first-child { margin-top: 0; }
-.sidebar .sidebar__nav { padding: 20px 15px; }
-.sidebar .sidebar__nav li.is-active a { background: white; color: #5f5f5f; }
-.sidebar .sidebar__nav a { font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; display: inline-block; padding: 15px 18px 11px; line-height: 15px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; font-size: 15px; color: #7a7a7a; text-transform: uppercase; text-decoration: none; }
-.sidebar .sidebar__nav a:hover { color: #5f5f5f; }
-.sidebar .sidebar__switch { padding: 20px; font-size: 0; border: 1px solid #e0e0e0; border-width: 0 0 1px 0; }
-.sidebar .sidebar__switch li { display: inline-block; margin-left: 10px; text-align: center; }
-.sidebar .sidebar__switch li:first-child { margin-left: 0; }
-.sidebar .sidebar__switch li.is-active a { background: white; }
-.sidebar .sidebar__switch a { position: relative; display: block; width: 80px; height: 80px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; text-decoration: none; color: #7a7a7a; padding-top: 60px; }
-.sidebar .sidebar__switch a .icon { position: absolute; top: 10px; left: 50%; }
-.sidebar .sidebar__switch a .icon_list { top: 15px; margin-left: -14px; }
-.sidebar .sidebar__switch a .icon_pin { top: 8px; margin-left: -12px; }
-.sidebar .sidebar__switch span { display: block; font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 12px; line-height: 1; text-transform: uppercase; }
-.sidebar .sidebar__sort { border: 1px solid #e0e0e0; border-width: 0 0 1px 0; }
+.filter { border: 1px solid #e0e0e0; border-width: 1px 0 0 0; padding: 20px; }
+.filter:first-child { border: none; }
+.filter.filter_switch { font-size: 0; }
+.filter.filter_switch li { display: inline-block; margin-left: 10px; text-align: center; }
+.filter.filter_switch li:first-child { margin-left: 0; }
+.filter.filter_switch li.is-active a { background: white; }
+.filter.filter_switch a { position: relative; display: block; width: 80px; height: 80px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; text-decoration: none; color: #7a7a7a; padding-top: 60px; }
+.filter.filter_switch a .icon { position: absolute; top: 10px; left: 50%; }
+.filter.filter_switch a .icon_list { top: 15px; margin-left: -14px; }
+.filter.filter_switch a .icon_pin { top: 8px; margin-left: -12px; }
+.filter.filter_switch span { display: block; font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 12px; line-height: 1; text-transform: uppercase; }
+.filter.filter_sort { padding: 20px 10px 20px 20px; }
+.filter.filter_sort li { margin-top: 14px; }
+.filter.filter_sort li:first-child { margin-top: 0; }
+.filter.filter_select { padding: 0; }
+.filter.filter_categories { padding: 20px 15px; }
+.filter.filter_categories li.is-active a { background: white; color: #5f5f5f; }
+.filter.filter_categories a { font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; display: inline-block; padding: 15px 18px 11px; line-height: 15px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; font-size: 15px; color: #7a7a7a; text-transform: uppercase; text-decoration: none; }
+.filter.filter_categories a:hover { color: #5f5f5f; }
 
 .checkbox { position: relative; padding-left: 28px; display: inline-block; vertical-align: middle; cursor: pointer; font-size: 0; min-height: 20px; text-align: left; }
 .checkbox .fa-check { position: absolute; left: 0; top: 0; width: 20px; height: 20px; font-size: 16px; background: white; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; border: 1px solid #b7b7b7; font-style: normal; cursor: pointer; color: #4a4a4a; }
@@ -114,6 +116,6 @@ body { font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-s
 .checkbox input:checked + .fa-check:before { display: inline-block; }
 
 .select { position: relative; }
-.select input { display: block; font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-style: normal; width: 100%; background: none; font-size: 15px; color: #7a7a7a; padding: 20px 26px; }
+.select input { display: block; font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-style: normal; width: 100%; background: none; font-size: 15px; color: #7a7a7a; padding: 20px 45px 20px 26px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
 .select .fa { position: absolute; top: 20px; right: 26px; font-size: 18px; color: #979797; }
 .select select { position: absolute; z-index: 2; cursor: pointer; -webkit-appearance: none; top: 0; left: 0; width: 100%; height: 100%; margin: 0; opacity: 0; }
