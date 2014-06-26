@@ -7,7 +7,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
-<body>
+<body class="bg_cover">
 
 
 
@@ -19,14 +19,34 @@
 				<div class="header__logo">
 					<a href="#">YellowCard</a>
 				</div>
+				<div class="header__count">
+					<strong>7 835</strong> баллов
+				</div>
+				<nav class="header__menu">
+					<ul>
+						<li><a href="#">Автомобили</a></li>
+						<li><a href="#">Транзакции</a></li>
+					</ul>
+				</nav>
 				<ul class="header__user">
 					<li>
-						<a href="#"><i class="icon icon_signin"></i>Личный кабинет</a>
+						<a href="#"><span class="header__username">Александр Яковлев</span></a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon icon_signout"></i>
+						</a>
 					</li>
 				</ul>
 			</div>
 		</header>
 		<!-- END header -->
+		<!-- BEGIN teaser -->
+		<div class="teaser">
+			<p>Ого! Прямо сейчас вам хватает баллов на <a href="#">ужин в ресторане «Гедонист»</a></p>
+			<a href="#" class="teaser__reload"></a>
+		</div>
+		<!-- END teaser -->
 
 		<!-- BEGIN page -->
 		<div class="page">
@@ -38,12 +58,67 @@
 						<div class="sidebar">
 							<!-- BEGIN filters -->
 							<div class="filters">
+								<ul class="filter filter_switch">
+									<li class="is-active">
+										<a href="#">
+											<i class="icon icon_list"></i>
+											<span>Списком</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="icon icon_pin"></i>
+											<span>На карте</span>
+										</a>
+									</li>
+								</ul>
+								<ul class="filter filter_sort">
+									<li>
+										<label class="checkbox">
+											<input type="checkbox">
+											<i class="fa fa-check"></i>
+											<span>Горящие акции</span>
+										</label>
+									</li>
+									<li>
+										<label class="checkbox">
+											<input type="checkbox" checked>
+											<i class="fa fa-check"></i>
+											<span>Постоянные</span>
+										</label>
+									</li>
+									<li>
+										<label class="checkbox">
+											<input type="checkbox">
+											<i class="fa fa-check"></i>
+											<span>На которые хватает баллов</span>
+										</label>
+									</li>
+								</ul>
+								<div class="filter filter_select">
+									<div class="select js-select">
+										<input type="text" class="js-select-input" readonly value="Все партнеры">
+										<i class="fa fa-caret-down"></i>
+										<select>
+											<option value="Все партнеры">Все партнеры</option>
+											<option value="Такси 135.by">Такси 135.by</option>
+											<option value="МТС">МТС</option>
+											<option value="Атлант-М">Атлант-М</option>
+											<option value="United Company">United Company</option>
+										</select>
+									</div>
+								</div>
 								<ul class="filter filter_categories">
-									<li><a href="#">Вопрос-ответ</a></li>
-									<li class="is-active"><a href="#">Условия</a></li>
-									<li><a href="#">Тарифы</a></li>
-									<li><a href="#">Безопасность</a></li>
-									<li><a href="#">Контакты</a></li>
+									<li class="is-active"><a href="#">Все акции</a></li>
+									<li><a href="#">Товары</a></li>
+									<li><a href="#">Услуги</a></li>
+									<li><a href="#">Еда</a></li>
+									<li><a href="#">Авто</a></li>
+									<li><a href="#">Красота</a></li>
+									<li><a href="#">здоровье</a></li>
+									<li><a href="#">Развлечения</a></li>
+									<li><a href="#">Обучение</a></li>
+									<li><a href="#">Туризм</a></li>
 								</ul>
 							</div>
 							<!-- END filters -->
@@ -51,18 +126,7 @@
 						<!-- END sidebar -->
 					</aside>
 					<div class="l-main">
-						<!-- BEGIN article -->
-						<article class="article">
-							<h1>Условия и особенности программы «Желтая карта»</h1>
-							<p>Мышление, как принято считать, вызывает филосовский аутизм, о чем и писал А.Маслоу в своей работе "Мотивация и личность". Наши исследования позволяют сделать вывод о том, что воспитание неумеренно дает комплекс, как и предсказывает теория о бесполезном знании. Закон вразнобой выбирает кризис, что лишний раз подтверждает правоту индуцируемые при различных психопатологических типологиях.</p>
-							<h2>Гетерогенность наблюдаема.</h2>
-							<p>НЛП позволяет вам точно определить какие изменения в субьективном опыте надо произвести, чтобы реакция притягивает стимул</p>
-							<figure>
-								<img src="img/img1.jpg" alt="img">
-							</figure>
-							<p>Лидерство понимает позитивистский автоматизм, таким образом осуществляется своего рода связь с темнотой бессознательного. Эриксоновский гипноз аннигилирует онтогенез речи, что вызвало развитие функционализма и сравнительно-психологических исследований поведения. Но так как книга Фридмана адресована</p>
-						</article>
-						<!-- END article -->
+						<!-- content goes here -->
 					</div>
 				</div>
 			</div>
