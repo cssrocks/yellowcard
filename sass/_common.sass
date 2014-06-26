@@ -93,11 +93,11 @@ a
 			+hidetext
 	.header__count
 		float: left
-		margin-left: 20px
-		margin-top: 15px
+		margin-left: 18px
+		margin-top: 17px
 		font-size: 18px
 		color: #393939
-		line-height: 1
+		line-height: 30px
 		strong
 			display: inline-block
 			vertical-align: middle
@@ -108,12 +108,12 @@ a
 		position: relative
 		display: inline-block
 		vertical-align: top
-		margin-top: 22px
+		padding-top: 24px
 		padding-right: 30px
 		&:before
 			position: absolute
 			top: 50%
-			margin-top: -21px
+			margin-top: -10px
 			right: 0
 			content: ""
 			+s(menu_separator)
@@ -121,7 +121,7 @@ a
 			display: inline-block
 			vertical-align: middle
 			text-transform: uppercase
-			margin-left: 30px
+			margin-left: 26px
 			font-size: 14px
 			+btm
 		a
@@ -143,7 +143,7 @@ a
 			color: $gray
 			.icon_signout
 				position: relative
-				top: -2px
+				top: -1px
 			.icon_signin
 				position: relative
 				top: -2px
@@ -160,7 +160,7 @@ a
 	position: relative
 	+btl
 	height: 68px
-	line-height: 68px
+	line-height: 66px
 	background: #9fa3fb
 	+background-image(linear-gradient(bottom, #7d81cf 0%, #9fa3fb 100%))
 	color: #fff
@@ -174,15 +174,21 @@ a
 		+arr(27, 7, #9fa3fb, t)
 		+rotate(360)
 		content: ""
-	p
-		display: block
-		+text-overflow
 	a
+		display: inline-block
 		+btm
 		color: inherit
-		text-decoration: underline
-		&:hover
-			text-decoration: none
+		text-decoration: none
+	p
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+		+text-overflow
+		a
+			border-bottom: 1px solid #fff
+			&:hover
+				text-decoration: none
+				border: none
 	.teaser__reload
 		position: absolute
 		top: 50%
@@ -340,7 +346,6 @@ a
 		strong
 			+btb
 
-
 .article
 	margin-left: 60px
 	padding: 55px 70px 0 60px
@@ -413,7 +418,7 @@ a
 			line-height: 1
 			text-transform: uppercase
 	&.filter_sort
-		padding: 20px 10px 20px 20px
+		padding: 20px 10px 14px 20px
 		li
 			margin-top: 14px
 			&:first-child
@@ -430,7 +435,7 @@ a
 		a
 			+btb
 			display: inline-block
-			padding: 15px 18px 11px
+			padding: 14px 16px 11px
 			// height: 41px
 			line-height: 15px
 			+border-radius(20px)
@@ -438,6 +443,7 @@ a
 			color: $gray
 			text-transform: uppercase
 			text-decoration: none
+			letter-spacing: 0.03em
 			&:hover
 				color: #5f5f5f
 
@@ -500,11 +506,11 @@ a
 		background: none
 		font-size: 15px
 		color: $gray
-		padding: 20px 45px 20px 26px
+		padding: 17px 45px 17px 25px
 		+text-overflow
 	.fa
 		position: absolute
-		top: 20px
+		top: 17px
 		right: 26px
 		font-size: 18px
 		color: #979797
