@@ -115,7 +115,7 @@ a { color: #4a4a4a; text-decoration: none; }
 .footer .footer__menu:after { content: " "; display: table; clear: both; }
 .footer .footer__menu ul { float: left; margin-left: 35px; }
 .footer .footer__menu ul:first-child { margin-left: 0; }
-.footer .footer__menu li { margin-top: 5px; text-align: left; padding-right: 10px; }
+.footer .footer__menu li { margin-top: 5px; text-align: left; }
 .footer .footer__menu li:first-child { margin-top: 0; }
 .footer .footer__menu a { color: #4a4a4a; text-decoration: none; border-bottom: 1px solid #949494; }
 .footer .footer__menu a:hover { color: #087380; text-decoration: none; border-color: #087380; }
