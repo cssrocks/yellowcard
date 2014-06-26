@@ -84,7 +84,7 @@ a { color: #4a4a4a; text-decoration: none; }
 
 .content { position: relative; background: #f7f7f7; }
 
-.footer { min-height: 195px; background: white; background: rgba(255, 255, 255, 0.88); padding: 25px 20px 0 85px; }
+.footer { min-height: 195px; background: white; background: rgba(255, 255, 255, 0.88); padding: 35px 20px 35px 85px; }
 .footer .footer__row { margin-top: 25px; *zoom: 1; width: 100%; }
 .footer .footer__row:after { content: " "; display: table; clear: both; }
 .footer .footer__row:first-child { margin-top: 0; }
@@ -98,12 +98,12 @@ a { color: #4a4a4a; text-decoration: none; }
 .footer .footer__partners li:first-child { margin-left: 0; }
 .footer .footer__partners a { text-decoration: none; border: none; }
 .footer .footer__partners a:hover { color: #087380; text-decoration: none; }
-.footer .footer__app { display: inline-block; vertical-align: middle; margin-top: 12px; margin-right: 65px; }
+.footer .footer__app { display: inline-block; vertical-align: top; margin-top: 12px; margin-right: 65px; }
 .footer .footer__app li { float: left; margin-left: 25px; -webkit-transition: opacity 0.3s linear; -moz-transition: opacity 0.3s linear; -o-transition: opacity 0.3s linear; transition: opacity 0.3s linear; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
 .footer .footer__app li:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 .footer .footer__app li:first-child { margin-left: 0; }
 .footer .footer__app a { display: block; font: 0/0 a; text-shadow: none; color: transparent; text-decoration: none; border: none; }
-.footer .footer__socials { display: inline-block; vertical-align: middle; margin-top: 12px; *zoom: 1; }
+.footer .footer__socials { display: inline-block; vertical-align: top; margin-top: 13px; *zoom: 1; }
 .footer .footer__socials:after { content: " "; display: table; clear: both; }
 .footer .footer__socials li { float: left; margin-left: 15px; -webkit-transition: opacity 0.3s linear; -moz-transition: opacity 0.3s linear; -o-transition: opacity 0.3s linear; transition: opacity 0.3s linear; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
 .footer .footer__socials li:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
