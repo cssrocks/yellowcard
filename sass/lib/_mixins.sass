@@ -30,6 +30,26 @@ $w480: 480px
 $w360: 360px
 $w320: 320px
 
+=justify
+	text-align: justify
+	line-height: 0
+	font-size: 1px
+	text-justify: newspaper
+	zoom: 1
+	text-align-last: justify
+	&:after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 0px
+		visibility: hidden
+		overflow: hidden
+=justify-child
+	display: inline-block
+	line-height: normal
+	vertical-align: top
+	font-size: 14px
+
 =r($media)
 	@if $media == w1280
 		@media only screen and (max-width: $w1280)
