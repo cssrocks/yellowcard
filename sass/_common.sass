@@ -566,30 +566,38 @@ a
 
 .g-row
 	+clr
-	margin-right: -10%
+	// margin-right: -10%
 	overflow: hidden
+	width: 100%
 .g
 	float: left
 	height: 0
 	&.h1
-		padding-bottom: 61.4%
+		// padding-bottom: 61.4%
+		padding-bottom: 66.7%
 	&.h2
-		padding-bottom: 30.7%
+		// padding-bottom: 30.7%
+		padding-bottom: 33.3%
 	&.w1
-		width: 61.4%
+		// width: 61.4%
+		width: 66.7%
 	&.w2
-		width: 30.7%
+		// width: 30.7%
+		width: 33.3%
 	&.w3
 		width: 30.7%
 	&.h50
 		width: 100%
-		padding-bottom: 100%
+		padding-bottom: 100.2%
 
 .offers
-	overflow: hidden
+	.offers__list
+		overflow: hidden
+		margin-right: -10px
+		margin-top: -10px
 	.offers__spinner
 		text-align: center
-		margin-top: 40px
+		margin-top: 50px
 		margin-bottom: 20px
 		font-size: 0
 	.offers__spinner-helper
@@ -599,6 +607,7 @@ a
 		color: #8f8f8f
 		margin-left: 25px
 		line-height: 1.2
+
 .offer
 	float: left
 	position: relative
@@ -608,7 +617,7 @@ a
 	&:before
 		position: absolute
 		right: 0
-		bottom: 0
+		top: 0
 		left: 0
 		height: 10px
 		background: #fff
@@ -631,10 +640,10 @@ a
 
 	.offer__cover
 		position: absolute
-		top: -1px
+		top: 9px
 		left: -1px
 		right: 9px
-		bottom: 9px
+		bottom: -1px
 		background-repeat: no-repeat
 		+cover
 		+gpu
@@ -652,7 +661,7 @@ a
 			content: ""
 	.offer__overlay
 		position: absolute
-		top: 0
+		top: 10px
 		left: 0
 		width: 100%
 		height: 100%
@@ -690,6 +699,10 @@ a
 			+opacity(.4)
 			content: ""
 	.offer__descr
+		+btb
+		font-size: 16px
+	.offer__proviso
+		+btl
 
 // 250x250 /default
 // 250x510 /wide
