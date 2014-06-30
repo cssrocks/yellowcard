@@ -629,6 +629,23 @@ a
 		background: #fff
 		content: ""
 		z-index: 1
+	&.offer_lg
+		.offer__heading
+			min-height: 100px
+		.offer__title
+			+btb
+			font-size: 50px
+		.offer__date
+			font-size: 18px
+		.offer__descr
+			font-size: 30px
+	&.offer_wide
+		.offer__heading
+			min-height: 100px
+		.offer__title
+			+btb
+			font-size: 40px
+			line-height: 40px
 	&:hover
 		.offer__cover
 			+transform(scale(1.1))
@@ -674,16 +691,29 @@ a
 		color: #fff
 	.offer__heading
 		margin-bottom: 5px
+		display: table
+		width: 100%
+		+clr
+		min-height: 70px
 	.offer__title
+		display: table-cell
+		vertical-align: middle
+		width: 75%
 		+btm
 		font-size: 25px
 		line-height: 28px
-		padding-right: 70px
+	.offer__brand
+		display: table-cell
+		vertical-align: middle
+		text-align: right
+		img
+			display: inline-block
+			vertical-align: middle
 	.offer__date
 		+btm
 		font-size: 14px
 		text-transform: uppercase
-		padding-bottom: 10px
+		padding-bottom: 11px
 		margin-bottom: 20px
 		position: relative
 		&:before
@@ -698,8 +728,15 @@ a
 	.offer__descr
 		+btb
 		font-size: 16px
+		p
+			display: inline
 	.offer__proviso
 		+btl
+		position: relative
+		&:after
+			display: inline
+			content: "\2192"
+			margin: 0 10px
 
 
 

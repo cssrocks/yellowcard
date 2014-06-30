@@ -1,11 +1,11 @@
 head.ready(function() {
 
-	$("#prop").click(function() {
-			$.get("offers.html",function(data){
-					$("#proposal").append(data);
-			});
-			return false;
-	});
+	// $("#prop").click(function() {
+	// 		$.get("offers.html",function(data){
+	// 				$("#proposal").append(data);
+	// 		});
+	// 		return false;
+	// });
 
 	$(function(){
 		var bg_image = (Math.floor(Math.random() * 11))+ ".jpg";
