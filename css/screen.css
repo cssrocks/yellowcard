@@ -190,6 +190,18 @@ a { color: #4a4a4a; text-decoration: none; }
 .offers .offers__spinner { text-align: center; margin-top: 50px; margin-bottom: 20px; font-size: 0; }
 .offers .offers__spinner-helper { display: inline-block; vertical-align: middle; font-size: 14px; color: #8f8f8f; margin-left: 25px; line-height: 1.2; }
 
+.btn-prev { display: inline-block; -webkit-border-radius: 18px; -moz-border-radius: 18px; -ms-border-radius: 18px; -o-border-radius: 18px; border-radius: 18px; background-color: white; background-color: rgba(255, 255, 255, 0.2); color: white; font-size: 16px; font-family: "BrutalType", Arial, sans-serif; font-weight: normal; font-style: normal; padding: 7px 16px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.btn-prev .fa { padding-right: 9px; }
+
+.offer-single { position: relative; margin-top: -10px; margin-right: -10px; *zoom: 1; }
+.offer-single:after { content: " "; display: table; clear: both; }
+.offer-single .btn-prev { position: absolute; top: 27px; left: 20px; z-index: 40; }
+.offer-single .btn-order { position: absolute; top: 100%; margin-top: 50px; right: 0; z-index: 60; font-size: 28px; color: white; padding: 22px 16px; }
+.offer-single .offer { position: relative; height: 0; padding-bottom: 48.7%; width: 100%; }
+.offer-single .offer .offer__date, .offer-single .offer .offer__descr { width: 60%; }
+.offer-single .offer .offer__info { left: 20px; z-index: auto; }
+.offer-single .offer .offer__heading { position: relative; }
+
 .offer { float: left; position: relative; overflow: hidden; }
 .offer:before { position: absolute; right: 0; top: 0; left: 0; height: 10px; background: white; content: ""; z-index: 1; }
 .offer:after { position: absolute; top: 0; right: 0; bottom: 0; width: 10px; background: white; content: ""; z-index: 1; }
@@ -227,22 +239,7 @@ a { color: #4a4a4a; text-decoration: none; }
 .subscribe .subscribe__action { display: inline-block; vertical-align: middle; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; margin: 0 25px; padding: 17px 18px; font-size: 24px; }
 
 .yandex-map { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
-
-.map-info { position: relative; *zoom: 1; left: -225px; bottom: 225px; top: auto; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; background-color: white; -webkit-box-shadow: 0 39px 79px rgba(0, 0, 0, 0.55); -moz-box-shadow: 0 39px 79px rgba(0, 0, 0, 0.55); box-shadow: 0 39px 79px rgba(0, 0, 0, 0.55); border: none; position: relative; }
-.map-info:after { content: " "; display: table; clear: both; }
-.map-info:before { position: absolute; bottom: -12px; left: 50%; margin-left: -12px; width: 0px; height: 0px; border-style: solid; border-width: 12px 12.5px 0 12.5px; border-color: white transparent transparent transparent; content: ""; }
-.map-info .map-info__img { position: relative; float: left; height: 175px; width: 175px; -webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px; -ms-border-radius: 5px 0 0 5px; -o-border-radius: 5px 0 0 5px; border-radius: 5px 0 0 5px; overflow: hidden; }
-.map-info .map-info__img:after { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: #e7e7e7; }
-.map-info .map-info__img img { position: relative; z-index: 1; display: block; max-width: 100%; height: auto; }
-.map-info .ymap__main { overflow: hidden; padding: 20px 16px 10px; text-align: left; }
-.map-info .ymap__main p { font-size: 15px; color: #4a4a4a; }
-.map-info .ymap__main p a { border-bottom: 1px solid #e5e5e5; }
-.map-info .ymap__main p a:hover { border-color: transparent; }
-.map-info .map-info__title { font-size: 18px; font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; color: #4a4a4a; text-decoration: none; margin-bottom: 6px; }
-.map-info .map-info__web { margin-top: 8px; }
-.map-info .map-info__web a { display: inline-block; line-height: 1; }
-.map-info .ymap__badge { display: inline-block; margin-left: -7px; margin-bottom: 7px; color: #9b9b9b; border: 1px solid gainsboro; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; padding: 4px 12px; }
-.map-info .ymap__badge:hover { border-color: gainsboro !important; }
+.yandex-map.yandex-map_wide { position: relative; height: 268px; }
 
 .ymap { position: relative; width: 430px; height: 175px; }
 .ymap .ymap__arrow:before { position: absolute; bottom: -12px; left: 50%; margin-left: -12px; width: 0px; height: 0px; border-style: solid; border-width: 12px 12.5px 0 12.5px; border-color: white transparent transparent transparent; content: ""; }
