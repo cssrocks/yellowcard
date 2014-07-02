@@ -867,7 +867,7 @@ a
 			display: block
 			max-width: 100%
 			height: auto
-	.map-info__main
+	.ymap__main
 		overflow: hidden
 		padding: 20px 16px 10px
 		text-align: left
@@ -889,7 +889,7 @@ a
 		a
 			display: inline-block
 			line-height: 1
-	.map-info__action
+	.ymap__badge
 		display: inline-block
 		margin-left: -7px
 		margin-bottom: 7px
@@ -900,6 +900,80 @@ a
 		&:hover
 			border-color: #dcdcdc !important
 
-
-
-
+.ymap
+	position: relative
+	width: 430px
+	height: 175px
+	// overflow: hidden
+	.ymap__arrow
+		&:before
+			position: absolute
+			bottom: -12px
+			left: 50%
+			margin-left: -12px
+			+arr(25, 12, #fff, bottom)
+			content: ""
+	.ymap__close
+		position: absolute
+		top: 10px
+		right: 10px
+		width: 9px
+		height: 9px
+		background: url(../img/ymap_close.png) no-repeat center center
+		cursor: pointer
+		z-index: 1
+	.ymap__inner
+		+clr
+		@include border-radius(5px)
+		background-color: #fff
+		@include box-shadow(0 39px 79px rgba(0,0,0,.55))
+		overflow: hidden
+	.ymap__pic
+		position: relative
+		float: left
+		height: 175px
+		width: 175px
+		// +border-radius(5px 0 0 5px)
+		overflow: hidden
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: #e7e7e7
+		img
+			position: relative
+			z-index: 1
+			display: block
+			max-width: 100%
+			height: auto
+	.ymap__main
+		overflow: hidden
+		padding: 15px
+		text-align: left
+		p
+			font-size: 15px
+			color: #4a4a4a
+			margin-bottom: 8px
+			a
+				border-bottom: 1px solid #e5e5e5
+				&:hover
+					border-color: transparent
+	.ymap__title
+		+btb
+		font-size: 18px
+		color: #4a4a4a
+		margin-bottom: 5px
+	.ymap__badge
+		margin-bottom: 5px !important
+		a
+			display: inline-block
+			margin-left: -7px
+			color: #9b9b9b
+			border: 1px solid #dcdcdc
+			+border-radius(15px)
+			padding: 4px 12px
+			&:hover
+				border-color: #dcdcdc !important

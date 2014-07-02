@@ -234,12 +234,29 @@ a { color: #4a4a4a; text-decoration: none; }
 .map-info .map-info__img { position: relative; float: left; height: 175px; width: 175px; -webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px; -ms-border-radius: 5px 0 0 5px; -o-border-radius: 5px 0 0 5px; border-radius: 5px 0 0 5px; overflow: hidden; }
 .map-info .map-info__img:after { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: #e7e7e7; }
 .map-info .map-info__img img { position: relative; z-index: 1; display: block; max-width: 100%; height: auto; }
-.map-info .map-info__main { overflow: hidden; padding: 20px 16px 10px; text-align: left; }
-.map-info .map-info__main p { font-size: 15px; color: #4a4a4a; }
-.map-info .map-info__main p a { border-bottom: 1px solid #e5e5e5; }
-.map-info .map-info__main p a:hover { border-color: transparent; }
+.map-info .ymap__main { overflow: hidden; padding: 20px 16px 10px; text-align: left; }
+.map-info .ymap__main p { font-size: 15px; color: #4a4a4a; }
+.map-info .ymap__main p a { border-bottom: 1px solid #e5e5e5; }
+.map-info .ymap__main p a:hover { border-color: transparent; }
 .map-info .map-info__title { font-size: 18px; font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; color: #4a4a4a; text-decoration: none; margin-bottom: 6px; }
 .map-info .map-info__web { margin-top: 8px; }
 .map-info .map-info__web a { display: inline-block; line-height: 1; }
-.map-info .map-info__action { display: inline-block; margin-left: -7px; margin-bottom: 7px; color: #9b9b9b; border: 1px solid gainsboro; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; padding: 4px 12px; }
-.map-info .map-info__action:hover { border-color: gainsboro !important; }
+.map-info .ymap__badge { display: inline-block; margin-left: -7px; margin-bottom: 7px; color: #9b9b9b; border: 1px solid gainsboro; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; padding: 4px 12px; }
+.map-info .ymap__badge:hover { border-color: gainsboro !important; }
+
+.ymap { position: relative; width: 430px; height: 175px; }
+.ymap .ymap__arrow:before { position: absolute; bottom: -12px; left: 50%; margin-left: -12px; width: 0px; height: 0px; border-style: solid; border-width: 12px 12.5px 0 12.5px; border-color: white transparent transparent transparent; content: ""; }
+.ymap .ymap__close { position: absolute; top: 10px; right: 10px; width: 9px; height: 9px; background: url(../img/ymap_close.png) no-repeat center center; cursor: pointer; z-index: 1; }
+.ymap .ymap__inner { *zoom: 1; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; background-color: white; -webkit-box-shadow: 0 39px 79px rgba(0, 0, 0, 0.55); -moz-box-shadow: 0 39px 79px rgba(0, 0, 0, 0.55); box-shadow: 0 39px 79px rgba(0, 0, 0, 0.55); overflow: hidden; }
+.ymap .ymap__inner:after { content: " "; display: table; clear: both; }
+.ymap .ymap__pic { position: relative; float: left; height: 175px; width: 175px; overflow: hidden; }
+.ymap .ymap__pic:after { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: #e7e7e7; }
+.ymap .ymap__pic img { position: relative; z-index: 1; display: block; max-width: 100%; height: auto; }
+.ymap .ymap__main { overflow: hidden; padding: 15px; text-align: left; }
+.ymap .ymap__main p { font-size: 15px; color: #4a4a4a; margin-bottom: 8px; }
+.ymap .ymap__main p a { border-bottom: 1px solid #e5e5e5; }
+.ymap .ymap__main p a:hover { border-color: transparent; }
+.ymap .ymap__title { font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 18px; color: #4a4a4a; margin-bottom: 5px; }
+.ymap .ymap__badge { margin-bottom: 5px !important; }
+.ymap .ymap__badge a { display: inline-block; margin-left: -7px; color: #9b9b9b; border: 1px solid gainsboro; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; padding: 4px 12px; }
+.ymap .ymap__badge a:hover { border-color: gainsboro !important; }

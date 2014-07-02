@@ -217,7 +217,7 @@
 	<!-- END out -->
 	<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 	<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
-	<script type="text/javascript">
+<!--  <script type="text/javascript">
 		ymaps.ready(init);
 		var myMap,
 				myPlacemark;
@@ -248,6 +248,116 @@
 			);
 
 			myMap.geoObjects.add(myPlacemark1);
+		}
+	</script> -->
+	<script>
+		ymaps.ready(init);
+		var map;
+
+		function init () {
+
+				var map = new ymaps.Map('map', {
+								center: [53.894372, 27.543501],
+								zoom: 12
+						}),
+
+						DefaultLayout = ymaps.templateLayoutFactory.createClass(
+								'<div class="ymap">' +
+										'<div class="ymap__close"></div>' +
+										'<div class="ymap__inner">' +
+											'<div class="ymap__pic">' +
+												'<img src="$[properties.image]" alt="img">' +
+											'</div>' +
+											'<div class="ymap__main">' +
+												'<h2 class="ymap__title">$[properties.title]</h2>' +
+												'<p class="ymap__badge"><a href="$[properties.offersUrl]">$[properties.offers]</a></p>' +
+												'<p>$[properties.address]</br>' +
+												'$[properties.tel]</p>' +
+												'<p><a href="http://$[properties.url]">$[properties.url]</a></p>' +
+											'</div>' +
+										'</div>' +
+										'<div class="ymap__arrow"></div>' +
+								'</div>',
+
+							{
+
+								build: function () {
+										DefaultLayout.superclass.build.call(this);
+										this.applyElementOffset();
+										this._element = $('.ymap', this.getParentElement());
+										this._element.find('.ymap__close')
+											.on('click', $.proxy(this.onCloseClick, this));
+								},
+
+								clear: function () {
+									this._element = $('.ymap', this.getParentElement());
+									DefaultLayout.superclass.build.call(this);
+									this._element.find('.ymap__close')
+										.off('click');
+								},
+
+								onCloseClick: function (e) {
+										e.preventDefault();
+										this.events.fire('userclose');
+								},
+
+								applyElementOffset: function () {
+										this._element = $('.ymap', this.getParentElement());
+										this._element.css({
+												left: -(this._element[0].offsetWidth / 2 + 10),
+												top: -(this._element[0].offsetHeight + this._element.find('.ymap__arrow')[0].offsetHeight + 45)
+										});
+								},
+
+							}
+						);
+
+						var mark1 = new ymaps.Placemark([53.894372, 27.543501], {
+								image: 'img/map_img1.jpg',
+								title: 'Атлант-М Подлосье',
+								offers: '15 акций',
+								offersUrl: '#',
+								address: 'Минская обл., д. Боровая, 2',
+								tel: '+375 (17) 266-44-44',
+								url: 'borovaya.by'
+						}, {
+								balloonContentLayout: DefaultLayout,
+								balloonLayout: DefaultLayout,
+								balloonPane: 'movableOuters',
+								balloonShadowPane: 'movableOuters',
+								balloonShadow: false,
+								iconImageHref: 'img/marker.png',
+								iconImageSize: [30, 40],
+								iconImageOffset: [-23, -27],
+								hideIconOnBalloonOpen: false,
+						});
+
+						var mark2 = new ymaps.Placemark([53.893472, 27.594901], {
+								image: 'img/map_img1.jpg',
+								title: 'Атлант-М',
+								offers: '25 акций',
+								offersUrl: '#',
+								address: 'Минская обл., д. Советская, 12',
+								tel: '+375 (17) 266-44-44',
+								url: 'borovaya.by'
+						}, {
+								balloonContentLayout: DefaultLayout,
+								balloonLayout: DefaultLayout,
+								balloonPane: 'movableOuters',
+								balloonShadowPane: 'movableOuters',
+								balloonShadow: false,
+								iconImageHref: 'img/marker.png',
+								iconImageSize: [30, 40],
+								iconImageOffset: [-23, -27],
+								hideIconOnBalloonOpen: false,
+						});
+
+				map.controls
+					.add('zoomControl', { right: 15, top: 15 });
+
+				map.geoObjects.add(mark1);
+				map.geoObjects.add(mark2);
+
 		}
 	</script>
 </body>
