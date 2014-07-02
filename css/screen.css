@@ -26,7 +26,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .l-sidebar { float: left; width: 210px; margin-right: -210px; min-height: 910px; }
 
-.l-main { position: relative; margin-left: 210px; overflow: hidden; background: white; }
+.l-main { position: relative; margin-left: 210px; overflow: hidden; background: white; min-height: 910px; }
 
 @font-face { font-family: "BrutalType"; src: url("../fonts/BrutalType-Regular.eot"); src: url("../fonts/BrutalType-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BrutalType-Regular.woff") format("woff"), url("../fonts/BrutalType-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
@@ -225,3 +225,25 @@ a { color: #4a4a4a; text-decoration: none; }
 .subscribe .subscribe__num { display: table-cell; vertical-align: middle; font-size: 100px; padding: 0 25px; }
 .subscribe .subscribe__meta { display: table-cell; vertical-align: middle; font-size: 25px; text-align: left; }
 .subscribe .subscribe__action { display: inline-block; vertical-align: middle; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; margin: 0 25px; padding: 17px 18px; font-size: 24px; }
+
+.yandex-map { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+
+.ymaps-stepwise-movable-outer-pane .ymaps-b-balloon__content { -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; background-color: white; -webkit-box-shadow: 0 39px 79px rgba(0, 0, 0, 0.55); -moz-box-shadow: 0 39px 79px rgba(0, 0, 0, 0.55); box-shadow: 0 39px 79px rgba(0, 0, 0, 0.55); border: none; position: relative; }
+.ymaps-stepwise-movable-outer-pane .ymaps-b-balloon__content:after { position: absolute; bottom: -12px; left: 50%; margin-left: -12px; width: 0px; height: 0px; border-style: solid; border-width: 12px 12.5px 0 12.5px; border-color: white transparent transparent transparent; content: ""; }
+.ymaps-stepwise-movable-outer-pane .ymaps-b-balloon__tr, .ymaps-stepwise-movable-outer-pane .ymaps-b-balloon__tl, .ymaps-stepwise-movable-outer-pane .ymaps-b-balloon__br, .ymaps-stepwise-movable-outer-pane .ymaps-b-balloon__bl { display: none; }
+.ymaps-stepwise-movable-outer-pane .ymaps-b-balloon__content-holster { padding: 0; }
+.ymaps-stepwise-movable-outer-pane .ymaps-b-balloon { left: -225px !important; top: -220px !important; }
+.ymaps-stepwise-movable-outer-pane .map-info { position: relative; width: 428px; height: 175px; }
+.ymaps-stepwise-movable-outer-pane .map-info__img { position: relative; float: left; height: 175px; width: 175px; -webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px; -ms-border-radius: 5px 0 0 5px; -o-border-radius: 5px 0 0 5px; border-radius: 5px 0 0 5px; overflow: hidden; }
+.ymaps-stepwise-movable-outer-pane .map-info__img:after { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: #e7e7e7; }
+.ymaps-stepwise-movable-outer-pane .map-info__img img { position: relative; z-index: 1; display: block; max-width: 100%; height: auto; }
+.ymaps-stepwise-movable-outer-pane .map-info__main { overflow: hidden; padding: 20px 16px 10px; }
+.ymaps-stepwise-movable-outer-pane .map-info__main p { font-size: 15px; color: #4a4a4a; }
+.ymaps-stepwise-movable-outer-pane .map-info__main p a { border-bottom: 1px solid #e5e5e5; }
+.ymaps-stepwise-movable-outer-pane .map-info__main p a:hover { border-color: transparent; }
+.ymaps-stepwise-movable-outer-pane .map-info__title { font-size: 18px; font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; color: #4a4a4a; text-decoration: none; margin-bottom: 6px; }
+.ymaps-stepwise-movable-outer-pane .map-info__web { margin-top: 8px; }
+.ymaps-stepwise-movable-outer-pane .map-info__web a { display: inline-block; line-height: 1; }
+.ymaps-stepwise-movable-outer-pane .map-info__action { display: inline-block; margin-left: -7px; margin-bottom: 7px; color: #9b9b9b; border: 1px solid gainsboro; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; padding: 4px 12px; }
+.ymaps-stepwise-movable-outer-pane .map-info__action:hover { border-color: gainsboro !important; }
+.ymaps-stepwise-movable-outer-pane .ymaps-b-balloon__close { background-image: url(../img/close.png); top: -6px; }

@@ -793,6 +793,97 @@ a
 		font-size: 24px
 		// color: #fff
 
+.yandex-map
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+
+
+.ymaps-stepwise-movable-outer-pane
+	.ymaps-b-balloon__content
+		@include border-radius(5px)
+		background-color: #fff
+		@include box-shadow(0 39px 79px rgba(0,0,0,.55))
+		border: none
+		position: relative
+		&:after
+			position: absolute
+			bottom: -12px
+			left: 50%
+			margin-left: -12px
+			+arr(25, 12, #fff, bottom)
+			content: ""
+	.ymaps-b-balloon__tr,
+	.ymaps-b-balloon__tl,
+	.ymaps-b-balloon__br,
+	.ymaps-b-balloon__bl
+		display: none
+	.ymaps-b-balloon__content-holster
+		padding: 0
+	.ymaps-b-balloon
+		left: -225px !important
+		top: -220px !important
+	.map-info
+		position: relative
+		width: 428px
+		height: 175px
+	.map-info__img
+		position: relative
+		float: left
+		height: 175px
+		width: 175px
+		@include border-radius(5px 0 0 5px)
+		overflow: hidden
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: #e7e7e7
+		img
+			position: relative
+			z-index: 1
+			display: block
+			max-width: 100%
+			height: auto
+	.map-info__main
+		overflow: hidden
+		padding: 20px 16px 10px
+		p
+			font-size: 15px
+			color: #4a4a4a
+			a
+				border-bottom: 1px solid #e5e5e5
+				&:hover
+					border-color: transparent
+	.map-info__title
+		font-size: 18px
+		+btb
+		color: #4a4a4a
+		text-decoration: none
+		margin-bottom: 6px
+	.map-info__web
+		margin-top: 8px
+		a
+			display: inline-block
+			line-height: 1
+	.map-info__action
+		display: inline-block
+		margin-left: -7px
+		margin-bottom: 7px
+		color: #9b9b9b
+		border: 1px solid #dcdcdc
+		@include border-radius(15px)
+		padding: 4px 12px
+		&:hover
+			border-color: #dcdcdc !important
+	.ymaps-b-balloon__close
+		background-image: url(../img/close.png)
+		top: -6px
 
 
 

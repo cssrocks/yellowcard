@@ -1,4 +1,4 @@
-head.ready(function() {
+$(document).ready(function() {
 
 	// $("#prop").click(function() {
 	// 		$.get("offers.html",function(data){
@@ -22,5 +22,10 @@ head.ready(function() {
 		var sidebar_height = $('.l-sidebar').height();
 		$('.l-main').css('min-height', sidebar_height);
 	});
+
+	// $(function() {
+	// 	var sidebar_height = $('.l-sidebar').height();
+	// 	$('.yandex-map').css('height', sidebar_height);
+	// });
 
 });
