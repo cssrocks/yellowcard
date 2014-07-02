@@ -801,34 +801,51 @@ a
 	bottom: 0
 
 
-.ymaps-stepwise-movable-outer-pane
-	.ymaps-b-balloon__content
-		@include border-radius(5px)
-		background-color: #fff
-		@include box-shadow(0 39px 79px rgba(0,0,0,.55))
-		border: none
-		position: relative
-		&:after
-			position: absolute
-			bottom: -12px
-			left: 50%
-			margin-left: -12px
-			+arr(25, 12, #fff, bottom)
-			content: ""
-	.ymaps-b-balloon__tr,
-	.ymaps-b-balloon__tl,
-	.ymaps-b-balloon__br,
-	.ymaps-b-balloon__bl
-		display: none
-	.ymaps-b-balloon__content-holster
-		padding: 0
-	.ymaps-b-balloon
-		left: -225px !important
-		top: -220px !important
-	.map-info
-		position: relative
-		width: 428px
-		height: 175px
+// .ymaps-stepwise-movable-outer-pane
+// 	.ymaps-b-balloon__content
+// 		@include border-radius(5px)
+// 		background-color: #fff
+// 		@include box-shadow(0 39px 79px rgba(0,0,0,.55))
+// 		border: none
+// 		position: relative
+// 		&:after
+// 			position: absolute
+// 			bottom: -12px
+// 			left: 50%
+// 			margin-left: -12px
+// 			+arr(25, 12, #fff, bottom)
+// 			content: ""
+// 	.ymaps-b-balloon__tr,
+// 	.ymaps-b-balloon__tl,
+// 	.ymaps-b-balloon__br,
+// 	.ymaps-b-balloon__bl
+// 		display: none
+// 	.ymaps-b-balloon__content-holster
+// 		padding: 0
+// 	.ymaps-b-balloon
+// 	.ymaps-b-balloon__close
+// 		background-image: url(../img/close.png)
+// 		top: -6px
+.map-info
+	position: relative
+	// width: 428px
+	// height: 175px
+	+clr
+	left: -225px
+	bottom: 225px
+	top: auto
+	@include border-radius(5px)
+	background-color: #fff
+	@include box-shadow(0 39px 79px rgba(0,0,0,.55))
+	border: none
+	position: relative
+	&:before
+		position: absolute
+		bottom: -12px
+		left: 50%
+		margin-left: -12px
+		+arr(25, 12, #fff, bottom)
+		content: ""
 	.map-info__img
 		position: relative
 		float: left
@@ -853,6 +870,7 @@ a
 	.map-info__main
 		overflow: hidden
 		padding: 20px 16px 10px
+		text-align: left
 		p
 			font-size: 15px
 			color: #4a4a4a
@@ -881,9 +899,7 @@ a
 		padding: 4px 12px
 		&:hover
 			border-color: #dcdcdc !important
-	.ymaps-b-balloon__close
-		background-image: url(../img/close.png)
-		top: -6px
+
 
 
 
