@@ -217,39 +217,6 @@
 	<!-- END out -->
 	<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 	<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
-<!--  <script type="text/javascript">
-		ymaps.ready(init);
-		var myMap,
-				myPlacemark;
-
-		function init(){
-			myMap = new ymaps.Map ("map", {
-					center: [53.894372, 27.543501],
-					zoom: 12
-			});
-			myMap.controls
-				.add('zoomControl', { right: 15, top: 15 });
-			myPlacemark1 = new ymaps.Placemark([53.894372, 27.543501],
-				{
-						hintContent: '',
-						balloonContent: '<div class="map-info"><div class="map-info__inner"><a class="map-info__img" href="#"><img src="img/map_img1.jpg"></a><div class="map-info__main"><a class="map-info__title" href="#">Атлант-М Подлосье</a><p><a href="#" class="map-info__action">15 акций</a></p><div class="map-info__meta"><p>Минская обл., д. Боровая, 2</p><p>+375 (17) 266-44-44</p><p class="map-info__web"><a href="#">borovaya.by</a></p></div></div></div>',
-				},
-				{
-					balloonLayout: "default#imageWithContent",
-					balloonContentSize: [430, 175],
-					balloonPane: 'movableOuters',
-					balloonShadowPane: 'movableOuters',
-					balloonShadow: false,
-					iconImageHref: 'img/marker.png',
-					iconImageSize: [30, 40],
-					iconImageOffset: [-23, -27],
-					hideIconOnBalloonOpen: false,
-				}
-			);
-
-			myMap.geoObjects.add(myPlacemark1);
-		}
-	</script> -->
 	<script>
 		ymaps.ready(init);
 		var map;
@@ -278,7 +245,6 @@
 										'</div>' +
 										'<div class="ymap__arrow"></div>' +
 								'</div>',
-
 							{
 
 								build: function () {
@@ -308,7 +274,6 @@
 												top: -(this._element[0].offsetHeight + this._element.find('.ymap__arrow')[0].offsetHeight + 45)
 										});
 								},
-
 							}
 						);
 
