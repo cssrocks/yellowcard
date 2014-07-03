@@ -228,6 +228,7 @@ a { color: #4a4a4a; text-decoration: none; }
 .offer-single .btn-prev { position: absolute; top: 27px; left: 20px; z-index: 40; }
 .offer-single .btn-order { position: absolute; top: 100%; margin-top: 50px; right: 0; z-index: 60; font-size: 28px; color: white; padding: 22px 16px; }
 .offer-single .offer { position: relative; height: 0; padding-bottom: 48.7%; width: 100%; }
+.offer-single .offer .offer__heading { padding-right: 15px; }
 .offer-single .offer .offer__date, .offer-single .offer .offer__descr { width: 60%; }
 .offer-single .offer .offer__descr { min-height: 85px; }
 .offer-single .offer .offer__info { left: 20px; z-index: auto; }
