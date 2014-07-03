@@ -88,6 +88,10 @@ a
 		margin-top: -10px
 		height: 71px
 		overflow: hidden
+		+transition(all .2s linear)
+		&:hover
+			height: 81px
+			margin-top: -20px
 		a
 			+svg(logo, 210, 132)
 			display: block
@@ -105,6 +109,9 @@ a
 			font-size: 30px
 			color: #ffbf00
 			+btb
+		span
+			display: inline-block
+			vertical-align: middle
 	.header__menu
 		position: relative
 		display: inline-block
@@ -125,9 +132,13 @@ a
 			margin-left: 26px
 			font-size: 14px
 			+btm
+			&:hover
+				a
+					color: #000
 		a
 			text-decoration: none
 			color: $gray
+			+transition(all .2s linear)
 	.header__user
 		display: inline-block
 		vertical-align: top
@@ -138,10 +149,19 @@ a
 			margin-left: 30px
 			font-size: 16px
 			+btm
+			&:hover
+				a
+					color: #000
+					.icon
+						+opacity(1)
 		a
 			display: block
 			text-decoration: none
 			color: $gray
+			+transition(all .2s linear)
+			.icon
+				+transition(all .2s linear)
+				+opacity(.5)
 			.icon_signout
 				position: relative
 				top: -1px
@@ -200,12 +220,13 @@ a
 		line-height: 30px
 		margin-top: -15px
 		text-decoration: none
-		+transition(transform .2s ease-in)
+		+transition(all .2s ease-in)
 		+ws
 		&:before
 			content: "\0057"
-		// &:hover
-		// 	+rotate(360)
+		&:hover
+			+gpu
+			+scale(1.1)
 		// &:active
 		// 	text-shadow: 0 -1px 0 rgba(#000, .3)
 
@@ -263,6 +284,10 @@ a
 			display: inline-block
 			vertical-align: middle
 			margin-left: 25px
+			+transition(opacity .3s linear)
+			+opacity(.8)
+			&:hover
+				+opacity(1)
 			&:first-child
 				margin-left: 0
 		a
@@ -397,6 +422,9 @@ a
 			&.is-active
 				a
 					background: #fff
+					color: $gray
+					.icon
+						+opacity(.6)
 		a
 			position: relative
 			display: block
@@ -406,10 +434,17 @@ a
 			text-decoration: none
 			color: $gray
 			padding-top: 60px
+			+transition(all .3s linear)
+			&:hover
+				color: #000
+				.icon
+					+opacity(1)
 			.icon
 				position: absolute
 				top: 10px
 				left: 50%
+				+transition(all .3s linear)
+				+opacity(.6)
 			.icon_list
 				top: 15px
 				margin-left: -14px
@@ -451,8 +486,9 @@ a
 			text-transform: uppercase
 			text-decoration: none
 			letter-spacing: 0.03em
+			+transition(all .2s linear)
 			&:hover
-				color: #5f5f5f
+				color: #000
 
 .checkbox
 	position: relative
@@ -533,6 +569,13 @@ a
 		margin: 0
 		opacity: 0
 
+
++keyframes(progress-animate)
+	0%
+		+rotate(0)
+	100%
+		+rotate(360)
+
 .btn
 	+btm
 	display: inline-block
@@ -558,6 +601,7 @@ a
 			background: transparent
 			color: #4a4a4a
 	&.btn_spinner
+		position: relative
 		+bt
 		font-size: 16px
 		color: #8f8f8f
@@ -565,12 +609,28 @@ a
 		border: 1px solid #dcdcdc
 		padding: 5px 18px
 		line-height: 26px
+		min-width: 365px
 		.icon
-			position: relative
-			top: -1px
-			margin-right: 15px
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-top: -11px
+			margin-left: -11px
+			+transition(all .4s ease-in-out)
+			+opacity(0)
+			+animation(progress-animate 1s linear infinite)
+		span
+			+transition(all .2s  ease-in-out)
+			+opacity(1)
+			+scale(1)
 		&:hover
 			background: none
+		&.is-loading
+			span
+				+opacity(0)
+				+scale(0)
+			.icon
+				+opacity(1)
 
 .g-row
 	+clr
@@ -624,6 +684,9 @@ a
 	+bt
 	padding: 7px 16px
 	+nosel
+	+transition(all .2s linear)
+	&:hover
+		background-color: rgba(#fff, .4)
 	.fa
 		padding-right: 9px
 
@@ -654,6 +717,8 @@ a
 		.offer__date,
 		.offer__descr
 			width: 60%
+		.offer__descr
+			min-height: 85px
 		.offer__info
 			// bottom: auto
 			// top: 95px
@@ -709,10 +774,10 @@ a
 		overflow: hidden
 		background: #000
 		&:hover
-			.offer__cover
-				+transform(scale(1.1))
+			// .offer__cover
+			// 	+transform(scale(1.1))
 			.offer__overlay
-				+opacity(0.3)
+				+opacity(0)
 	.offer__cover
 		position: absolute
 		top: -1px
@@ -722,7 +787,7 @@ a
 		background-repeat: no-repeat
 		+cover
 		+gpu
-		+transition(transform 0.5s linear)
+		// +transition(transform 0.5s linear)
 		display: block
 		&:before
 			position: absolute
@@ -730,7 +795,7 @@ a
 			left: 0
 			width: 100%
 			height: 100%
-			+transition(all 500ms linear)
+			// +transition(all .1s linear)
 			+background-image(linear-gradient(bottom, #000 0%, rgba(0,0,0,0) 100%))
 			+opacity(.5)
 			content: ""
@@ -740,8 +805,8 @@ a
 		left: 0
 		width: 100%
 		height: 100%
-		+transition(all 500ms linear)
-		+opacity(0)
+		+transition(all .2s linear)
+		+opacity(.2)
 		background-color: #000
 	.offer__href
 		position: absolute
@@ -809,7 +874,7 @@ a
 .subscribe
 	background: #fff
 	border: 1px solid #e5e5e5
-	border-width: 1px 0
+	border-width: 1px 0 0
 	padding: 40px 5px
 	.subscribe__in
 		display: table
@@ -925,5 +990,8 @@ a
 			border: 1px solid #dcdcdc
 			+border-radius(15px)
 			padding: 4px 12px
+			+nosel
+			+transition(all .2s linear)
 			&:hover
-				border-color: #dcdcdc !important
+				border-color: #7a7a7a !important
+				color: #7a7a7a

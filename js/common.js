@@ -7,6 +7,11 @@ $(document).ready(function() {
 	// 		return false;
 	// });
 
+	$(' .js-spinner ').on('click', function(){
+		$(this).toggleClass('is-loading');
+		return false;
+	});
+
 	$(".js-switch-list").on('click', function(){
 		$('.js-switch-map').removeClass('is-active');
 		$(this).addClass('is-active');
