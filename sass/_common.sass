@@ -71,6 +71,10 @@ a
 .out
 	@extend %in
 
+
+.clear
+	+clr
+
 .header
 	padding-top: 30px
 	position: relative
@@ -89,9 +93,9 @@ a
 		height: 71px
 		overflow: hidden
 		// +transition(all .2s linear)
-		+transition(all 600ms ceaser($easeOutExpo))
+		+transition(all 600ms ceaser($easeInExpo))
 		&:hover
-			+transition(all 600ms ceaser($easeInExpo))
+			+transition(all 600ms ceaser($easeOutExpo))
 			height: 81px
 			margin-top: -20px
 		a
@@ -186,7 +190,6 @@ a
 	line-height: 66px
 	background: #9fa3fb
 	+background-image(linear-gradient(bottom, #7d81cf 0%, #9fa3fb 100%))
-	color: #fff
 	text-align: center
 	padding: 0 65px
 	font-size: 25px
@@ -207,11 +210,18 @@ a
 		vertical-align: middle
 		line-height: 1
 		+text-overflow
+		color: rgba(#fff, .8)
+		+transition(all .2s linear)
+		&:hover
+			color: #fff
 		a
-			border-bottom: 1px solid rgba(#fff, .5)
+			color: inherit
+			border-bottom: 1px solid rgba(#fff, .8)
+			+transition(all .2s linear)
 			&:hover
+				color: #fff
 				text-decoration: none
-				border-color: transparent
+				border-color: #fff
 	.teaser__reload
 		position: absolute
 		top: 50%
@@ -221,7 +231,8 @@ a
 		text-align: center
 		line-height: 30px
 		margin-top: -15px
-		text-decoration: none
+		color: #fff
+		color: rgba(#fff, .8)
 		+transition(all .2s ease-in)
 		+ws
 		&:before
@@ -229,6 +240,7 @@ a
 		&:hover
 			+gpu
 			+scale(1.1)
+			color: #fff
 		// &:active
 		// 	text-shadow: 0 -1px 0 rgba(#000, .3)
 
@@ -382,7 +394,7 @@ a
 
 .article
 	// margin-left: 60px
-	padding: 0px 60px 10px 110px
+	margin: 0px 60px 0 110px
 	h1
 		+btl
 		font-size: 50px
@@ -700,30 +712,32 @@ a
 	.fa
 		padding-right: 9px
 
+
 .deal
-	position: relative
-	margin-top: -10px
-	margin-right: -10px
-	+clr
-	.btn-prev
-		position: absolute
-		top: 27px
-		left: 20px
-		z-index: 40
-	.btn-order
-		position: absolute
-		top: 100%
-		margin-top: 50px
-		right: 0
-		z-index: 60
-		font-size: 28px
-		color: #fff
-		padding: 22px 16px
-	.offer
+	.deal__offer
 		position: relative
-		height: 0
-		padding-bottom: 48.7%
-		width: 100%
+		margin-top: -10px
+		margin-right: -10px
+		+clr
+		.btn-prev
+			position: absolute
+			top: 27px
+			left: 20px
+			z-index: 40
+		.btn-order
+			position: absolute
+			top: 100%
+			margin-top: 50px
+			right: 0
+			z-index: 60
+			font-size: 28px
+			color: #fff
+			padding: 22px 16px
+		.offer
+			position: relative
+			height: 0
+			padding-bottom: 48.7%
+			width: 100%
 		.offer__heading
 			padding-right: 15px
 		.offer__date,
@@ -732,12 +746,19 @@ a
 		.offer__descr
 			min-height: 85px
 		.offer__info
-			// bottom: auto
-			// top: 95px
 			left: 20px
 			z-index: auto
 		.offer__heading
 			position: relative
+	.deal__map
+		position: relative
+		height: 268px
+		margin-bottom: 40px
+	.deal__tabs
+		margin-top: 40px
+		margin-bottom: 75px
+
+
 .offer
 	float: left
 	position: relative
@@ -818,7 +839,7 @@ a
 		width: 100%
 		height: 100%
 		+transition(all .2s linear)
-		+opacity(.2)
+		+opacity(.15)
 		background-color: #000
 	.offer__href
 		position: absolute
@@ -923,9 +944,6 @@ a
 	left: 0
 	right: 0
 	bottom: 0
-	&.yandex-map_wide
-		position: relative
-		height: 268px
 
 .ymap
 	position: relative
@@ -986,8 +1004,9 @@ a
 			margin-bottom: 8px
 			a
 				border-bottom: 1px solid #e5e5e5
+				+transition(all .2s linear)
 				&:hover
-					border-color: transparent
+					border-color: #4a4a4a
 	.ymap__title
 		+btb
 		font-size: 18px
@@ -1009,8 +1028,6 @@ a
 				color: #7a7a7a
 
 
-
-
 +keyframes(fadeIn)
 	0%
 		+opacity(0)
@@ -1018,19 +1035,66 @@ a
 		+opacity(1)
 
 .tabs
-	margin-bottom: 50px
+	margin-bottom: 70px
 	.tabs__nav
+		text-align: center
+		font-size: 0
 		li
+			display: inline-block
+			a
+				display: block
+				color: #979797
+				font-size: 15px
+				+btb
+				text-transform: uppercase
+				+transition(all .2s linear)
+				border: 1px solid #dcdcdc
+				border-width: 1px 1px 1px 0
+				padding: 14px 22px 12px
+				line-height: 15px
+			&:first-child
+				a
+					border-width: 1px
+					+border-radius(20px 0 0 20px)
+			&:last-child
+				a
+					+border-radius(0 20px 20px 0)
+			&:hover
+				a
+					color: #6c6c6c
 			&.is-active
 				a
-					color: red
+					background: #f8f8f8
+					color: #6c6c6c
 	.tabs__content
+		padding: 60px 50px 0
 	.tabs__pane
 		display: none
 		+animation(fadeIn 1s both)
 		&.is-active
 			display: block
 
+.note
+	overflow: hidden
+	p
+		font-size: 18px
+		color: #646464
+		line-height: 24px
+		margin-bottom: 1em
+		width: 52.3%
+		float: right
+		&.note__thesis
+			float: left
+			width: 47.7%
+			padding-right: 40px
+			font-size: 25px
+			line-height: 1.4
+			margin-top: -0.2em
+			margin-bottom: 0
+	&.note_wide
+		p
+			width: auto
+			float: none
 
 .has-open-popup
 	overflow: hidden
