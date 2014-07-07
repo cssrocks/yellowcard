@@ -12,7 +12,7 @@ $(document).ready(function() {
 		$('.js-offer-slider').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			infinite: false,
+			// infinite: false,
 			arrows: false,
 			onInit: function() {
 				offers_counter_all.html(offers_item_val);
