@@ -1,11 +1,36 @@
 $(document).ready(function() {
 
-	// $("#prop").click(function() {
-	// 		$.get("offers.html",function(data){
-	// 				$("#proposal").append(data);
-	// 		});
-	// 		return false;
-	// });
+	function offerSlider() {
+
+		var offers = $('.js-offer-slider'),
+				offers_item = offers.find('.offer-slider__slide'),
+				offers_item_val = offers_item.length,
+				offers_counter = $('.js-offers-counter'),
+				offers_counter_current = offers_counter.find('.offer-slider__counter-current'),
+				offers_counter_all = offers_counter.find('.offer-slider__counter-all');
+
+		$('.js-offer-slider').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			infinite: false,
+			arrows: false,
+			onInit: function() {
+				offers_counter_all.html(offers_item_val);
+			},
+			onAfterChange: function(){
+				offers_item_current = offers.find('.offer-slider__slide.slick-active').data('counter');
+				offers_counter_current.html(offers_item_current);
+			}
+		});
+
+		$('.offer-slider__next').click(function(){
+			$(".js-offer-slider").slickNext();
+		});
+		$('.offer-slider__prev').click(function(){
+			$(".js-offer-slider").slickPrev();
+		});
+
+	} offerSlider();
 
 	function modals() {
 		$(document).on("click", function(){
