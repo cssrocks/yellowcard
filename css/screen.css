@@ -331,7 +331,7 @@ a { color: #4a4a4a; text-decoration: none; }
 .subscribe .subscribe__meta { display: table-cell; vertical-align: middle; font-size: 25px; text-align: left; }
 .subscribe .subscribe__form { display: table-cell; vertical-align: middle; padding-left: 40px; font-size: 0; }
 .subscribe .subscribe__field { position: relative; display: inline-block; vertical-align: middle; }
-.subscribe .subscribe__input { font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 25px; line-height: 26px; padding: 16px 178px 17px 21px; display: block; width: 421px; color: #4a4a4a; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; -o-border-radius: 8px; border-radius: 8px; border: 1px solid #e3e3e3; }
+.subscribe .subscribe__input { font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 25px; line-height: 26px; padding: 19px 178px 14px 21px; display: block; width: 421px; color: #4a4a4a; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; -o-border-radius: 8px; border-radius: 8px; border: 1px solid #e3e3e3; }
 .subscribe .subscribe__input:-moz-placeholder, .subscribe .subscribe__input::-moz-placeholder { color: #d4d4d4; opacity: 1; }
 .subscribe .subscribe__input::-webkit-input-placeholder { color: #d4d4d4; }
 .subscribe .subscribe__input:focus:-moz-placeholder, .subscribe .subscribe__input:focus::-moz-placeholder { color: transparent; opacity: 1; }
