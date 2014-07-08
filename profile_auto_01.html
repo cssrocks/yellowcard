@@ -129,113 +129,44 @@
 						<!-- BEGIN main-content -->
 						<div class="main-content single-column">
 
-							<!-- BEGIN main-title -->
-							<div class="main-title">
-								Транзакции за
-								<div class="select js-select">
-									<span class="select__text js-select-text">все время</span>
-									<input type="text" class="js-select-input" readonly value="все время">
-									<select>
-										<option value="все время">все время</option>
-										<option value="неделю">неделю</option>
-										<option value="месяц">месяц</option>
-										<option value="год">год</option>
-									</select>
+							<h1 class="main-title">Автомобили</h1>
+
+							<!-- BEGIN auto -->
+							<div class="auto">
+								<div class="auto__list">
+									<div class="auto__row">
+										<div class="auto__info">
+											<div class="auto__title">Toyota Venza, <span class="auto__num">6123 IO-7</span></div>
+											<div class="auto__status">оплачен до 21 сен</div>
+										</div>
+										<div class="auto__action">
+											<a href="#">Продлить на год</a>
+										</div>
+									</div>
+									<div class="auto__row">
+										<div class="auto__info">
+											<div class="auto__title">Mazda 3, <span class="auto__num">5589 IT-7</span></div>
+											<div class="auto__status auto__status_expire">платеж просрочен</div>
+										</div>
+										<div class="auto__action">
+											<a href="#">Продлить на год</a>
+										</div>
+									</div>
+									<div class="auto__row">
+										<div class="auto__info">
+											<div class="auto__title">Nissan GTR, <span class="auto__num">1117 AA-7</span></div>
+											<div class="auto__status">ожидает оплаты</div>
+										</div>
+										<div class="auto__action">
+											<a href="#">Оплатить</a>
+										</div>
+									</div>
+								</div>
+								<div class="auto__add">
+									<a href="js-popup-auto" class="btn btn_lg js-popup-link">Добавить автомобиль</a>
 								</div>
 							</div>
-							<!-- END main-title -->
-							<!-- BEGIN transaction -->
-							<div class="transaction">
-								<ul class="transaction__total">
-									<li class="transaction__total-outcome">Потрачено <span>260</span> баллов</li>
-									<li class="transaction__total-income">Заработано <span>1 000</span></li>
-								</ul>
-								<div class="transaction__history">
-									<div class="transaction__history-row">
-										<div class="transaction__history-sum"><i class="fa fa-plus"></i> 200</div>
-										<div class="transaction__history-descr">
-											<p>200 литров бензина</p>
-											<p><span>United Company, Логойский тракт</span></p>
-										</div>
-										<div class="transaction__history-date">Сегодня</div>
-									</div>
-									<div class="transaction__history-row">
-										<div class="transaction__history-sum"><i class="fa fa-minus"></i> 25</div>
-										<div class="transaction__history-descr">
-											<p>Скидка на обед</p>
-											<p><span>Тапас бар</span></p>
-										</div>
-										<div class="transaction__history-date">Вчера</div>
-									</div>
-									<div class="transaction__history-row">
-										<div class="transaction__history-sum"><i class="fa fa-minus"></i> 100</div>
-										<div class="transaction__history-descr">
-											<p>Продукты</p>
-											<p><span>Preston Market</span></p>
-										</div>
-										<div class="transaction__history-date">28 апр</div>
-									</div>
-									<div class="transaction__history-row">
-										<div class="transaction__history-sum"><i class="fa fa-minus"></i> 5</div>
-										<div class="transaction__history-descr">
-											<p>Продукты</p>
-											<p><span>Соседи</span></p>
-										</div>
-										<div class="transaction__history-date">12 апр</div>
-									</div>
-									<div class="transaction__history-row">
-										<div class="transaction__history-sum"><i class="fa fa-plus"></i> 300</div>
-										<div class="transaction__history-descr">
-											<p>Одежда, 3 200 000 руб</p>
-											<p><span>Mustang Jeans</span></p>
-										</div>
-										<div class="transaction__history-date">4 апр</div>
-									</div>
-
-									<div class="transaction__history-row">
-										<div class="transaction__history-sum"><i class="fa fa-plus"></i> 200</div>
-										<div class="transaction__history-descr">
-											<p>200 литров бензина</p>
-											<p><span>United Company, Логойский тракт</span></p>
-										</div>
-										<div class="transaction__history-date">1 апр</div>
-									</div>
-									<div class="transaction__history-row">
-										<div class="transaction__history-sum"><i class="fa fa-minus"></i> 25</div>
-										<div class="transaction__history-descr">
-											<p>Скидка на обед</p>
-											<p><span>Тапас бар</span></p>
-										</div>
-										<div class="transaction__history-date">10 мар</div>
-									</div>
-									<div class="transaction__history-row">
-										<div class="transaction__history-sum"><i class="fa fa-minus"></i> 100</div>
-										<div class="transaction__history-descr">
-											<p>Продукты</p>
-											<p><span>Preston Market</span></p>
-										</div>
-										<div class="transaction__history-date">1 мар</div>
-									</div>
-									<div class="transaction__history-row">
-										<div class="transaction__history-sum"><i class="fa fa-minus"></i> 5</div>
-										<div class="transaction__history-descr">
-											<p>Продукты</p>
-											<p><span>Соседи</span></p>
-										</div>
-										<div class="transaction__history-date">12 сен 2013</div>
-									</div>
-									<div class="transaction__history-row">
-										<div class="transaction__history-sum"><i class="fa fa-plus"></i> 300</div>
-										<div class="transaction__history-descr">
-											<p>Одежда, 3 200 000 руб</p>
-											<p><span>Mustang Jeans</span></p>
-										</div>
-										<div class="transaction__history-date">24 авг, 2013</div>
-									</div>
-
-								</div>
-							</div>
-							<!-- END transaction -->
+							<!-- END auto -->
 
 						</div>
 						<!-- END main-content -->
@@ -315,6 +246,17 @@
 
 	</div>
 	<!-- END out -->
+
+
+	<div class="overlay js-overlay">
+	</div>
+		<div class="popup js-popup js-popup-auto">
+			<div class="popup__close js-popup-close"></div>
+				<div class="popup__content">
+					<div class="popup__title">Автомобиль</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quasi in accusamus cum architecto eos nihil amet beatae consectetur dolor, laboriosam consequuntur reprehenderit, aperiam optio vel aliquam! Iusto delectus, enim!</p>
+				</div>
+		</div>
 
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

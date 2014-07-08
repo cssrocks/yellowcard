@@ -57,20 +57,23 @@ $(document).ready(function() {
 
 	function modals() {
 		$(document).on("click", function(){
-			$(".js-overlay").hide();
+			$(".js-overlay").removeClass('is-open');
+			$(".js-popup").removeClass('is-active');
 			$("body").removeClass("has-open-popup");
 		});
 		$(".js-popup-link").on("click", function(event){
-			$(".js-overlay").fadeOut(200);
+			$(".js-overlay").removeClass('is-open');
+			$(".js-popup").addClass('is-active');
 			var popup = $(this).attr("href");
 			$("body").addClass("has-open-popup");
-			$("."+popup).parent().fadeIn(200);
+			$(".js-overlay").addClass('is-open');
 			event.stopPropagation();
 			return false;
 		});
 		$(".js-popup-close").on("click", function(){
-			$(".js-overlay").fadeOut(200);
-			$("body").removeClass("has-open-popup")
+			$(".js-overlay").removeClass('is-open');
+			$('.js-popup').removeClass('is-active');
+			$("body").removeClass("has-open-popup");
 			return false;
 		});
 		$(".js-popup").on("click", function(event){
