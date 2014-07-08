@@ -421,3 +421,27 @@ a { color: #4a4a4a; text-decoration: none; }
 .offer-slider .offer__overlay { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 .offer-slider .offer-slider__counter { font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block; padding: 3px 0; font-size: 20px; color: #4a4a4a; }
 .offer-slider .offer-slider__counter-current { font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; }
+
+.transaction { margin: 0 80px; }
+.transaction .transaction__title { text-align: center; font-size: 50px; font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; line-height: 1; margin-bottom: 70px; }
+.transaction .transaction__select { position: relative; display: inline-block; vertical-align: middle; overflow: hidden; border-radius: 30px; border: 1px solid #e0e0e0; padding: 3px 28px 10px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.transaction .transaction__select:hover { border-color: #4a4a4a; }
+.transaction .transaction__select:hover input { color: black; }
+.transaction .transaction__select input { display: none; font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; width: auto; background: none; font-size: 50px; color: #7a7a7a; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.transaction .transaction__select select { position: absolute; z-index: 2; cursor: pointer; -webkit-appearance: none; top: 0; left: 0; width: 100%; height: 100%; margin: 0; opacity: 0; }
+.transaction .transaction__total { *zoom: 1; padding-bottom: 26px; margin-bottom: 65px; border-bottom: 1px solid #eaeaea; line-height: 1; }
+.transaction .transaction__total:after { content: " "; display: table; clear: both; }
+.transaction .transaction__total li { font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 21px; }
+.transaction .transaction__total li span { font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; }
+.transaction .transaction__total-income { display: inline-block; }
+.transaction .transaction__total-outcome { float: right; }
+.transaction .transaction__history { margin-bottom: 100px; }
+.transaction .transaction__history-row { display: table; width: 100%; line-height: 1; margin-top: 40px; }
+.transaction .transaction__history-row:first-child { margin-top: 0; }
+.transaction .transaction__history-sum { display: table-cell; vertical-align: top; width: 30%; font-family: "BrutalType Bold", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 40px; padding-left: 40px; }
+.transaction .transaction__history-sum .fa { float: left; margin-left: -40px; font-size: 20px; vertical-align: middle; position: relative; }
+.transaction .transaction__history-sum .fa.fa-plus { color: #93cf94; top: 10px; }
+.transaction .transaction__history-sum .fa.fa-minus { color: #ff6642; top: 12px; }
+.transaction .transaction__history-descr { display: table-cell; vertical-align: top; font-size: 21px; width: 52%; }
+.transaction .transaction__history-descr p > span { font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 14px; color: #9f9f9f; }
+.transaction .transaction__history-date { display: table-cell; vertical-align: top; font-size: 16px; color: #9f9f9f; width: 18%; }

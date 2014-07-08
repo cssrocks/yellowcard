@@ -1252,3 +1252,122 @@ a
 		+btm
 	// .offer-slider__counter-all
 
+.transaction
+	margin: 0 80px
+	.transaction__title
+		text-align: center
+		font-size: 50px
+		+btl
+		line-height: 1
+		margin-bottom: 70px
+	.transaction__select
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		overflow: hidden
+		// vertical-align: middle
+		// display: inline-block
+		border-radius: 30px
+		border: 1px solid #e0e0e0
+		padding: 3px 28px 10px
+		+transition(all .2s linear)
+		&:hover
+			border-color: #4a4a4a
+			input
+				color: #000
+		input
+			display: none
+			+btl
+			// width: 100%
+			width: auto
+			background: none
+			font-size: 50px
+			color: $gray
+			// padding: 17px 45px 17px 25px
+			+text-overflow
+			// line-height: 1
+			+transition(all .2s linear)
+		select
+			position: absolute
+			z-index: 2
+			cursor: pointer
+			-webkit-appearance: none
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			margin: 0
+			opacity: 0
+	.transaction__select-text
+		// height: 38px
+	.transaction__total
+		+clr
+		padding-bottom: 26px
+		margin-bottom: 65px
+		border-bottom: 1px solid #eaeaea
+		line-height: 1
+		li
+			+btl
+			font-size: 21px
+			span
+				+btm
+	.transaction__total-income
+		display: inline-block
+	.transaction__total-outcome
+		float: right
+	.transaction__history
+		margin-bottom: 100px
+	.transaction__history-row
+		display: table
+		width: 100%
+		line-height: 1
+		margin-top: 40px
+		&:first-child
+			margin-top: 0
+	.transaction__history-sum
+		display: table-cell
+		vertical-align: top
+		width: 30%
+		// vertical-align: middle
+		+btb
+		font-size: 40px
+		padding-left: 40px
+		.fa
+			float: left
+			margin-left: -40px
+			font-size: 20px
+			vertical-align: middle
+			position: relative
+			&.fa-plus
+				color: #93cf94
+				top: 10px
+			&.fa-minus
+				color: #ff6642
+				top: 12px
+	.transaction__history-descr
+		display: table-cell
+		vertical-align: top
+		// vertical-align: middle
+		font-size: 21px
+		width: 52%
+		p
+			> span
+				+btl
+				font-size: 14px
+				color: #9f9f9f
+	.transaction__history-date
+		display: table-cell
+		vertical-align: top
+		font-size: 16px
+		color: #9f9f9f
+		width: 18%
+		// vertical-align: middle
+
+
+
+
+
+
+
+
+
