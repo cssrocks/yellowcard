@@ -322,9 +322,23 @@ a { color: #4a4a4a; text-decoration: none; }
 
 .subscribe { background: white; border: 1px solid #e5e5e5; border-width: 1px 0 0; padding: 40px 5px; }
 .subscribe .subscribe__in { display: table; margin: 0 auto; font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 40px; line-height: 30px; text-align: center; }
+.subscribe .subscribe__step.subscribe__step_anon .subscribe__num { padding: 0 25px 0 0; }
+.subscribe .subscribe__step.subscribe__step_finish { font-size: 50px; }
+.subscribe .subscribe__step.subscribe__step_finish .subscribe__icon { position: relative; top: -3px; display: inline-block; vertical-align: middle; font-family: "WebSymbolsLigaRegular"; font-weight: normal; font-style: normal; text-transform: none !important; font-size: 56px; color: #00a43e; padding-right: 22px; }
+.subscribe .subscribe__step.subscribe__step_finish .subscribe__icon_success:before { content: "\00F4"; }
 .subscribe .subscribe__info { display: table-cell; vertical-align: middle; }
 .subscribe .subscribe__num { display: table-cell; vertical-align: middle; font-size: 100px; padding: 0 25px; }
 .subscribe .subscribe__meta { display: table-cell; vertical-align: middle; font-size: 25px; text-align: left; }
+.subscribe .subscribe__form { display: table-cell; vertical-align: middle; padding-left: 40px; font-size: 0; }
+.subscribe .subscribe__field { position: relative; display: inline-block; vertical-align: middle; }
+.subscribe .subscribe__input { font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 25px; line-height: 26px; padding: 16px 178px 17px 21px; display: block; width: 421px; color: #4a4a4a; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; -o-border-radius: 8px; border-radius: 8px; border: 1px solid #e3e3e3; }
+.subscribe .subscribe__input:-moz-placeholder, .subscribe .subscribe__input::-moz-placeholder { color: #d4d4d4; opacity: 1; }
+.subscribe .subscribe__input::-webkit-input-placeholder { color: #d4d4d4; }
+.subscribe .subscribe__input:focus:-moz-placeholder, .subscribe .subscribe__input:focus::-moz-placeholder { color: transparent; opacity: 1; }
+.subscribe .subscribe__input:focus::-webkit-input-placeholder { color: transparent; }
+.subscribe .subscribe__btn { position: absolute; top: 11px; right: 10px; padding: 9px 12px; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; }
+.subscribe .subsribe__form-success { display: inline-block; vertical-align: middle; margin-left: 15px; color: #00a43e; font-size: 26px; font-family: "WebSymbolsLigaRegular"; font-weight: normal; font-style: normal; text-transform: none !important; }
+.subscribe .subsribe__form-success:before { content: "\00F3"; }
 .subscribe .subscribe__action { display: inline-block; vertical-align: middle; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; margin: 0 25px; padding: 17px 18px; font-size: 24px; }
 
 .yandex-map { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }

@@ -888,6 +888,24 @@ a
 		font-size: 40px
 		line-height: 30px
 		text-align: center
+	.subscribe__step
+		&.subscribe__step_anon
+			.subscribe__num
+				padding: 0 25px 0 0
+		&.subscribe__step_finish
+			font-size: 50px
+			.subscribe__icon
+				position: relative
+				top: -3px
+				display: inline-block
+				vertical-align: middle
+				+ws
+				font-size: 56px
+				color: #00a43e
+				padding-right: 22px
+			.subscribe__icon_success
+				&:before
+					content: "\00F4"
 	.subscribe__info
 		display: table-cell
 		vertical-align: middle
@@ -901,6 +919,45 @@ a
 		vertical-align: middle
 		font-size: 25px
 		text-align: left
+	.subscribe__form
+		display: table-cell
+		vertical-align: middle
+		padding-left: 40px
+		font-size: 0
+	.subscribe__field
+		position: relative
+		display: inline-block
+		vertical-align: middle
+	.subscribe__input
+		+btl
+		font-size: 25px
+		line-height: 26px
+		padding: 16px 178px 17px 21px
+		display: block
+		width: 421px
+		color: #4a4a4a
+		+placeholder-color(#d4d4d4)
+		+font-smoothing
+		+border-radius(8px)
+		border: 1px solid #e3e3e3
+		&:focus
+			+placeholder-color(transparent)
+	.subscribe__btn
+		position: absolute
+		top: 11px
+		right: 10px
+		padding: 9px 12px
+		+border-radius(7px)
+	.subsribe__form-success
+		display: inline-block
+		vertical-align: middle
+		margin-left: 15px
+		color: #00a43e
+		font-size: 26px
+		+ws
+
+		&:before
+			content: "\00F3"
 	.subscribe__action
 		display: inline-block
 		vertical-align: middle

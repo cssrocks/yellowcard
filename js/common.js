@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	$('.js-subscribe-btn').on('click', function() {
+		$(this).parents('.subscribe__step').hide();
+		$('.js-subscribe-success').fadeIn('slow');
+		return false;
+	});
+
 	function offerSlider() {
 
 		var offers = $('.js-offer-slider'),
