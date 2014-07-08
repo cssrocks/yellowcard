@@ -337,6 +337,8 @@ a { color: #4a4a4a; text-decoration: none; }
 .subscribe .subscribe__input:focus:-moz-placeholder, .subscribe .subscribe__input:focus::-moz-placeholder { color: transparent; opacity: 1; }
 .subscribe .subscribe__input:focus::-webkit-input-placeholder { color: transparent; }
 .subscribe .subscribe__btn { position: absolute; top: 11px; right: 10px; padding: 9px 12px; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; }
+.subscribe .subscribe__btn[disabled] { cursor: default; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
+.subscribe .subscribe__btn[disabled]:hover { background: #feca30; color: white; }
 .subscribe .subsribe__form-success { display: inline-block; vertical-align: middle; margin-left: 15px; color: #00a43e; font-size: 26px; font-family: "WebSymbolsLigaRegular"; font-weight: normal; font-style: normal; text-transform: none !important; }
 .subscribe .subsribe__form-success:before { content: "\00F3"; }
 .subscribe .subscribe__action { display: inline-block; vertical-align: middle; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; margin: 0 25px; padding: 17px 18px; font-size: 24px; }

@@ -948,6 +948,12 @@ a
 		right: 10px
 		padding: 9px 12px
 		+border-radius(7px)
+		&[disabled]
+			cursor: default
+			+opacity(.5)
+			&:hover
+				background: #feca30
+				color: #fff
 	.subsribe__form-success
 		display: inline-block
 		vertical-align: middle
