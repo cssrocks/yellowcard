@@ -525,6 +525,70 @@ a
 			+ .fa-check
 				&:before
 					display: inline-block
+.radio-group
+	.radio-group__label
+		font-size: 25px
+		display: inline-block
+		vertical-align: middle
+		margin-right: 35px
+	.radio-group__options
+		display: inline-block
+		vertical-align: middle
+		.radio
+			margin-left: 19px
+			&:first-child
+				margin-left: 0
+
+.radio
+	position: relative
+	padding-left: 34px
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	font-size: 0
+	min-height: 28px
+	text-align: left
+	.fa-circle
+		position: absolute
+		left: 0
+		top: 0
+		width: 28px
+		height: 28px
+		font-size: 14px
+		background: #fff
+		+border-radius(50%)
+		border: 2px solid #e2e2e2
+		font-style: normal
+		cursor: pointer
+		color: #4a4a4a
+		&:before
+			display: none
+			margin: 5px 0 0 6px
+			color: #4a4a4a
+	span
+		+btl
+		display: inline-block
+		vertical-align: middle
+		font-size: 25px
+		line-height: 28px
+		color: #4a4a4a
+		letter-spacing: 0.025em
+		+nosel
+		.fa
+			margin-right: 7px
+	input
+		position: absolute
+		left: 0
+		top: 0
+		z-index: 2
+		width: 28px
+		height: 28px
+		opacity: 0
+		cursor: pointer
+		&:checked
+			+ .fa-circle
+				&:before
+					display: inline-block
 
 .select
 	position: relative
@@ -1227,7 +1291,23 @@ a
 		line-height: 1
 		margin-bottom: 60px
 		text-align: center
-
+	.popup__form
+	.popup__row
+		margin-top: 20px
+		&:first-child
+			margin-top: 0
+		.radio-group
+			padding-top: 5px
+		&.popup__row_action
+			position: relative
+			text-align: center
+			margin-top: 55px
+			.del-action
+				display: block
+				position: absolute
+				top: 15px
+				left: 0
+				text-align: left
 .offer-slider
 	position: relative
 	.offer-slider__title
@@ -1456,9 +1536,75 @@ a
 		margin-top: 55px
 		text-align: center
 
+.del-action
+	font-size: 15px
+	+btm
+	color: #e51832
+	opacity: 0.6
+	+transition(all .2s linear)
+	&:hover
+		opacity: 1
+	span
+		border-bottom: 1px solid #f9d7d8
 
+.floatlabel
+	+border-radius(8px)
+	border: 1px solid #e3e3e3
+	width: 100%
+	display: block
+	padding: 20px 17px 15px !important
+	font-size: 23px
+	line-height: 29px
+	+btl
+	+font-smoothing
+	// &.floatlabel_mod
+		// text-transform: uppercase
+	// +transition(all .3s linear) !important
+	// -webkit-transition: all .3s linear !important
+	// -moz-transition: all .3s linear !important
+	// -ms-transition: all .3s linear !important
+	// -o-transition: all .3s linear !important
+	// transition: all .3s linear !important
+	// &:hover
+	// 	border-color: #000
 
-
+.selectfloat
+	position: relative
+	// &:hover
+		// .floatlabel
+		// 	border-color: #000
+		// .fa
+		// 	color: #000
+	// .selectfloat__input
+	// 	display: block
+	// 	+bt
+	// 	width: 100%
+	// 	background: none
+	// 	font-size: 15px
+	// 	color: $gray
+	// 	padding: 17px 45px 17px 25px
+	// 	+text-overflow
+	// 	+transition(all .2s linear)
+	.fa
+		position: absolute
+		top: 23px
+		right: 21px
+		font-size: 25px
+		// color: #979797
+		color: #4a4a4a
+		+transition(all .2s linear)
+		z-index: 1
+	select
+		position: absolute
+		z-index: 2
+		cursor: pointer
+		-webkit-appearance: none
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		margin: 0
+		opacity: 0
 
 
 

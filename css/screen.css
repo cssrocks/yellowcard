@@ -227,6 +227,19 @@ a { color: #4a4a4a; text-decoration: none; }
 .checkbox input { position: absolute; left: 0; top: 0; z-index: 2; width: 20px; height: 20px; opacity: 0; cursor: pointer; }
 .checkbox input:checked + .fa-check:before { display: inline-block; }
 
+.radio-group .radio-group__label { font-size: 25px; display: inline-block; vertical-align: middle; margin-right: 35px; }
+.radio-group .radio-group__options { display: inline-block; vertical-align: middle; }
+.radio-group .radio-group__options .radio { margin-left: 19px; }
+.radio-group .radio-group__options .radio:first-child { margin-left: 0; }
+
+.radio { position: relative; padding-left: 34px; display: inline-block; vertical-align: middle; cursor: pointer; font-size: 0; min-height: 28px; text-align: left; }
+.radio .fa-circle { position: absolute; left: 0; top: 0; width: 28px; height: 28px; font-size: 14px; background: white; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 2px solid #e2e2e2; font-style: normal; cursor: pointer; color: #4a4a4a; }
+.radio .fa-circle:before { display: none; margin: 5px 0 0 6px; color: #4a4a4a; }
+.radio span { font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; display: inline-block; vertical-align: middle; font-size: 25px; line-height: 28px; color: #4a4a4a; letter-spacing: 0.025em; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.radio span .fa { margin-right: 7px; }
+.radio input { position: absolute; left: 0; top: 0; z-index: 2; width: 28px; height: 28px; opacity: 0; cursor: pointer; }
+.radio input:checked + .fa-circle:before { display: inline-block; }
+
 .select { position: relative; }
 .select:hover input { color: black; }
 .select:hover .fa { color: black; }
@@ -407,6 +420,11 @@ a { color: #4a4a4a; text-decoration: none; }
 .popup .popup__close:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 .popup .popup__content { background: white; font-size: 12px; text-align: left; overflow: hidden; padding: 50px 100px 40px; }
 .popup .popup__title { font-size: 50px; font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; line-height: 1; margin-bottom: 60px; text-align: center; }
+.popup .popup__row { margin-top: 20px; }
+.popup .popup__row:first-child { margin-top: 0; }
+.popup .popup__row .radio-group { padding-top: 5px; }
+.popup .popup__row.popup__row_action { position: relative; text-align: center; margin-top: 55px; }
+.popup .popup__row.popup__row_action .del-action { display: block; position: absolute; top: 15px; left: 0; text-align: left; }
 
 .offer-slider { position: relative; }
 .offer-slider .offer-slider__title { text-align: center; font-size: 35px; font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; line-height: 1; margin: 0 120px 20px; }
@@ -466,3 +484,13 @@ a { color: #4a4a4a; text-decoration: none; }
 .auto .auto__action a { font-size: 16px; font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; color: #0720f4; border-bottom: 1px solid #a3a3ff; opacity: 0.6; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .auto .auto__action a:hover { opacity: 1; }
 .auto .auto__add { margin-top: 55px; text-align: center; }
+
+.del-action { font-size: 15px; font-family: "BrutalType Medium", Arial, sans-serif; font-weight: normal; font-style: normal; color: #e51832; opacity: 0.6; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.del-action:hover { opacity: 1; }
+.del-action span { border-bottom: 1px solid #f9d7d8; }
+
+.floatlabel { -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; -o-border-radius: 8px; border-radius: 8px; border: 1px solid #e3e3e3; width: 100%; display: block; padding: 20px 17px 15px !important; font-size: 23px; line-height: 29px; font-family: "BrutalType Light", Arial, sans-serif; font-weight: normal; font-style: normal; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
+
+.selectfloat { position: relative; }
+.selectfloat .fa { position: absolute; top: 23px; right: 21px; font-size: 25px; color: #4a4a4a; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 1; }
+.selectfloat select { position: absolute; z-index: 2; cursor: pointer; -webkit-appearance: none; top: 0; left: 0; width: 100%; height: 100%; margin: 0; opacity: 0; }

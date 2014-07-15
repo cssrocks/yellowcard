@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+	$('.floatlabel').floatlabel({
+		slideInput: false
+	});
+
+	$('.selectfloat').on('change', function(){
+		$(this).find('.floatlabel').trigger('keyup');
+	});
+
+
 	function subscribeValidate() {
 		$('.js-val-submit').attr('disabled',true);
 		$('.js-val-input').keyup(function(){
