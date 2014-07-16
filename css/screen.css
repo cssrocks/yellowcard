@@ -494,3 +494,12 @@ a { color: #4a4a4a; text-decoration: none; }
 .selectfloat { position: relative; }
 .selectfloat .fa { position: absolute; top: 23px; right: 21px; font-size: 25px; color: #4a4a4a; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 1; }
 .selectfloat select { position: absolute; z-index: 2; cursor: pointer; -webkit-appearance: none; top: 0; left: 0; width: 100%; height: 100%; margin: 0; opacity: 0; }
+
+.profile { width: 461px; margin-left: auto; margin-right: auto; }
+.profile .profile__userinfo { margin-bottom: 20px; }
+.profile .profile__row { margin-bottom: 20px; }
+.profile .profile__action { text-align: center; margin-top: 48px; }
+.profile .profile__row_inline { *zoom: 1; }
+.profile .profile__row_inline:after { content: " "; display: table; clear: both; }
+.profile .profile__row_inline .floatlabel-wrapper { width: 221px; float: right; }
+.profile .profile__row_inline .floatlabel-wrapper:first-child { float: left; }
