@@ -4,8 +4,10 @@ $(document).ready(function() {
 		slideInput: false
 	});
 
+	$('.js-car-model').hide();
 	$('.selectfloat').on('change', function(){
 		$(this).find('.floatlabel').trigger('keyup');
+		$('.js-car-model').slideDown();
 	});
 
 
@@ -73,6 +75,9 @@ $(document).ready(function() {
 		$(".js-popup-link").on("click", function(event){
 			$(".js-overlay").removeClass('is-open');
 			$(".js-popup").addClass('is-active');
+			// $(".js-popup").animate({ top: '0px' }, 1000, 'easeInOutQuart', function () {
+			// 	$(this).show();
+			// });
 			var popup = $(this).attr("href");
 			$("body").addClass("has-open-popup");
 			$(".js-overlay").addClass('is-open');
@@ -82,6 +87,9 @@ $(document).ready(function() {
 		$(".js-popup-close").on("click", function(){
 			$(".js-overlay").removeClass('is-open');
 			$('.js-popup').removeClass('is-active');
+			// $(".js-popup").animate({ top: '-=100%' }, 1000, 'easeInOutQuart', function () {
+			// 	$(this).hide();
+			// });
 			$("body").removeClass("has-open-popup");
 			return false;
 		});
